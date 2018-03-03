@@ -66,9 +66,10 @@
     * none隐藏 消失
 * vertical-align
 * 盒子模型
-    * margin
+    * margin(外边距)
         * margin支持负值
         * margin兼容问题
+    * padding(内边距)
     * border(边框)
 
 
