@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style: none;}
+
+        .content{
+            width:300px;
+            /* height: 300px;*/
+            background-color: #fab868;
+        }
+        .content p{
+            cursor: pointer;
+            height: 40px;
+            line-height: 40px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+        }
+        .content ul{
+            display: none;/*隐藏、消失*/
+        }
+        .content p:hover+ul{
+            display: block;/*让消失元素再回来*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <p>我是p元素</p>
+    <ul>
+        <li>我是无序列表</li>
+        <li>我是无序列表</li>
+        <li>我是无序列表</li>
+        <li>我是无序列表</li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
