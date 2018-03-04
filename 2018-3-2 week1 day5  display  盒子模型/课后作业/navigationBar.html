@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" center="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" center="ie=edge">
+    <title>导航栏navigationBar</title>
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .box {
+                width: 1000px;
+                background-color: rgb(197, 182, 182);
+                margin: 10px auto;
+            }
+    
+            .left {
+                width: 200px;
+                vertical-align: top;
+                display: inline-block;
+            }
+    
+            .left img {
+                width: 200px;
+                height: 100px;
+            }
+    
+            .center {
+                width: 500px;
+                height: 100px;
+                vertical-align: top;
+                background-color: #f00;
+                display: inline-block;
+            }
+    
+            .center ul {
+                line-height: 100px;
+                list-style: none;
+            }
+    
+            .center ul li {
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 700;
+                font-family: '微软雅黑';
+                color: #333;
+                padding-left: 15px;
+            }
+    
+            .center ul li:hover {
+                text-decoration: underline;
+                color: #087ccc;
+                cursor: pointer;
+            }
+    
+            .right {
+                vertical-align: top;
+                width: 240px;
+                height: 100px;
+                line-height:100px;
+                background-color: #00ff00;
+                display: inline-block;
+                background: url(./images/icon2.png) no-repeat 5px center;
+                padding-left: 30px;
+                
+            }
+            .right a{
+                text-decoration:none;
+                font-size:14px;
+                padding-left:15px;
+            }
+    
+        </style>
+    </head>
+    
+    <body>
+        <div class="box">
+            <div class="left">
+                <img src="./images/logo.png" alt="图片">
+            </div>
+            <div class="center">
+                <ul class="Menu">
+                    <li>Node培训课程 </li>
+                    <li>Html5培训课程</li>
+                    <li>视频教程</li>
+                    <li>课程文档</li>
+                    <li>联系我们</li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="#" class="shoppingLink">购物车</a>
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    
+    </body>
+    </html>
