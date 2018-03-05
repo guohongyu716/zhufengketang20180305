@@ -1,0 +1,656 @@
+.main {
+    width: 1204px;
+    margin: 0 auto;
+    /*background-color: #f1f1f1;*/
+}
+
+.header h1 {
+    float: left;
+    width: 176px;
+    height: 52px;
+    margin: 16px 85px 16px 0; /*上右下左*/
+}
+
+.header h1 img {
+    width: 100%;
+}
+
+.header .nav {
+    float: left;
+}
+
+.header .nav ul {
+    margin-left: -60px;
+}
+
+.header .nav li {
+    float: left;
+    height: 84px;
+    line-height: 84px;
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+.header .nav li a {
+    color: #2a2a2a;
+}
+
+.header .nav li a:hover {
+    color: #2b7dd1;
+}
+
+.header .login {
+    float: right;
+}
+
+.header .login .car {
+    position: relative;
+    float: left;
+    line-height: 84px;
+    margin-right: 40px;
+    z-index:1;
+}
+
+.header .login .car-shop {
+    font-size: 14px;
+    color: #666767;
+    cursor: pointer;
+}
+
+.header .login .car-shop i {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+    background: url("../img/icon.png") no-repeat;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.header .login .car:hover .car-shop {
+    color: #2b7dd1;
+}
+
+.header .login .car:hover .car-shop i {
+    background-position: -41px 0;
+}
+
+.header .login .link {
+    line-height: 84px;
+    margin-right: 31px;
+    font-size: 14px;
+    color: #666767;
+}
+
+.header .login .car:hover .hidden-car {
+    display: block;
+}
+
+.login .car .hidden-car {
+    display: none;
+    position: absolute;
+    left: -150px;
+    top: 62px;
+    width: 324px;
+    background-color: #fff;
+    padding: 0 13px;
+    box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.34);
+    border:1px solid #f1f1f1\0;/*css hack 兼容IE8-9浏览器*/
+    *border:1px solid #f1f1f1;/*兼容IE7浏览器  ( * # )    */
+}
+
+.login .hidden-car h3 {
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    border-bottom: 1px solid #e1e1e1;
+}
+.login .hidden-car h3 .title{
+    float: left;
+}
+.login .hidden-car h3 .addCouse {
+    float: right;
+    color: #7d7d7d;
+    font-size: 12px;
+}
+
+.login .hidden-car .car-cont .cont-icon {
+    margin: 59px auto 2px;
+    width: 68px;
+    height: 68px;
+    background: #9e9e9e url("../img/icon.png") no-repeat;
+    background-position: 14px -27px;
+    border-radius: 50%;
+}
+
+.login .hidden-car .car-cont .cont-empty {
+    margin: 0 auto;
+    width: 189px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #414141;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.login .hidden-car .cont-italy {
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+}
+
+.login .hidden-car .cont-italy a {
+    color: #4e91d7;
+    font-size: 12px;
+}
+
+.login .hidden-car .car-bot {
+    height: 68px;
+    line-height: 68px;
+    margin-top: 24px;
+    border-top: 1px solid #e1e1e1;
+}
+
+.login .hidden-car .car-bot span {
+    float: left;
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+.login .hidden-car .car-bot > a {
+    float: right;
+    width: 79px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #4e91d7;
+    color: #fdfdfe;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/*banner*/
+.banner{
+    position: relative;
+    width:1204px;
+    height: 360px;
+    overflow: hidden;
+}
+.banner .banImg{
+    width:4816px;
+}
+.banner .banImg li{
+    float: left;
+    width:1204px;
+}
+.banner .banImg li img{
+    width:100%;
+}
+.banner .sideBar{
+    position: absolute;
+    left:0;
+    top:0;
+    width:240px;
+    height: 360px;
+    /*background-color: rgba(0,0,0,.2);*/
+}
+.banner .sideBar li{
+    height: 72px;
+    line-height: 71px;
+}
+
+.banner .sideBar li a{
+    position: relative;
+    display: block;
+    width:170px;
+    height: 71px;
+    margin:0 auto;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom:1px solid #fff\0;
+    *border-bottom:1px solid #fff;
+    font-size: 14px;
+    color: #fdfdfe;
+    padding:0 10px;
+}
+
+.banner .sideBar li.noBorderBot a{
+border-bottom: none;
+}
+.banner .sideBar li a>span{
+    float: left;
+}
+.banner .sideBar li a i{
+    float: right;
+    display: inline-block;
+    width:7px;
+    height: 13px;
+    background: url("../img/foot-icon.png") no-repeat;
+    background-position: -156px -187px;
+    margin-top: 29px;
+}
+.banner .sideBar li:hover .ban-hidden{
+    display: block;
+}
+.banner .sideBar li:hover a{
+    /*top:-71px;*/
+    margin-top:-71px;
+}
+.banner .sideBar li:hover .bg2{
+    /*background-color: rgba(0,0,0,.3);*/
+    display: block;
+}
+
+.banner .sideBar .ban-hidden{
+    position: absolute;
+    left:240px;
+    top:0;
+    display: none;
+    width:574px;
+    height: 360px;
+    background:url("../img/ban-hidden.jpg") no-repeat;
+}
+.banner .sideBar .ban-hidden2{
+    background: url("../img/bg2.jpg") no-repeat;
+}
+.banner .sideBar .ban-hidden dl{
+    margin:34px 0 0 32px;
+}
+.banner .sideBar .ban-hidden dl dt{
+    font-size: 16px;
+    color: #0b0b0b;
+    line-height: 14px;
+    margin-bottom: 7px;
+}
+.banner .sideBar .ban-hidden dl dd{
+    font-size: 14px;
+    color: #4a4b4b;
+    line-height: 14px;
+    margin-top:23px;
+}
+.banner .bg1{
+    position: absolute;
+    left:0;
+    top:0;
+    width:240px;
+    height: 360px;
+    background-color: #000;
+    opacity: 0.2;/*透明度 ： 值 0-1  兼容高版本浏览器*/
+    filter: alpha(opacity=20);/*值：0-100*/
+}
+.banner .bg2{
+    /*position: relative;*/
+    display: none;
+    width:240px;
+    height: 71px;
+    background-color: #000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+/*actual*/
+.actual{
+    margin-top:39px;
+}
+.actual h3{
+    font-size: 16px;
+    color: #2d2d2d;
+    font-weight: normal;
+}
+.actual .actualInfo{
+    margin-top:20px;
+}
+.actual .actualInfo ul{
+    margin-left: -65px;
+}
+.actual .actualInfo li{
+    position: relative;
+    float: left;
+    width:251px;
+    height: 185px;
+    margin-left:65px;
+    box-shadow: 3px 3px 4px rgba(2,2,2,.27);
+}
+.actual .actualInfo li img{
+    width:100%;
+}
+.actual .actualInfo .topInfo{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width:221px;
+    background: url("../img/actual-bg.png") no-repeat;
+    padding:14px 15px 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.actual .actualInfo .topInfo h5{
+    padding-top:8px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #1e1e1e;
+    font-weight: normal;
+}
+.actual .actualInfo .topInfo p{
+    font-size: 12px;
+    color: #9e9d9d;
+    line-height: 14px;
+    padding-top:10px;
+}
+.actual .actualInfo .botInfo{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width:221px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #fff;
+    padding:0 15px;
+}
+.actual .actualInfo .botInfo .money{
+    float: left;
+    font-size: 12px;
+    color: #c71b1b;
+}
+.actual .actualInfo .botInfo .study{
+    float: right;
+    font-size: 12px;
+    color: #868484;
+}
+.actual .actualInfo li:hover .topInfo{
+    bottom: 36px;
+}
+
+/*content*/
+.content{
+    width:100%;
+    margin-top:29px;
+    padding:34px 0 54px 0;
+    background-color: #f3f5f7;
+}
+.content .web{
+    width:224px;
+    float: left;
+}
+.content .web a{
+    display: block;
+}
+.content .web img{
+    width:100%;
+}
+.content .webInfo{
+    float: left;
+    width:397px;
+    margin-left:17px;
+}
+.content .webInfo a{
+    display: block;
+}
+.content .webInfo .marginTop{
+    margin-top:11px;
+}
+.content .webInfo a img{
+    width:100%;
+}
+.content .webVue {
+    float: left;
+    width: 251px;
+    margin-left: 17px;
+    margin-top:0;
+}
+.content .webVue .actualInfo{
+    margin-top:0;
+}
+.content .webVue .actualInfo ul,.content .webVue .actualInfo li{
+    margin-left:0;
+}
+.content .webVue .actualInfo li.marginTop{
+    margin-top:11px;
+}
+.content .webVue .actualInfo li .cont{
+    display: inline-block;
+    width:21px;
+    height: 21px;
+    line-height: 21px;
+    background-color: #b7b7b7;
+    font-size: 16px;
+    color: #fefbfb;
+    text-align: center;
+    margin-right:8px;
+}
+.content .contRight{
+    background-color: #fff;
+    padding-bottom: 21px;
+}
+.content .contRight .actualInfo li{
+    box-shadow: none;
+}
+.content .contRight .actualInfo li.contInfo{
+    height: 30px;
+    line-height: 30px;
+    padding:0 18px;
+}
+.content .contRight .actualInfo li.contInfo a{
+    font-size: 12px;
+    color: #1e1e1e;
+}
+.content .contRight .actualInfo li.contInfo em{
+    float: left;
+    width:4px;
+    height: 4px;
+    background-color: #636363;
+    margin-top: 14px;
+    margin-right:8px;
+}
+.content .contRight .actualInfo li.paddingTop{
+    padding-top:25px;
+}
+.content .contRight li .botInfo{
+    border-bottom: 1px solid red;
+}
+
+
+/*footer*/
+.footer-top {
+    width: 100%;
+    padding: 47px 0 58px 0;
+    background-color: #2e2e2e;
+    /*margin-top:500px;*/
+}
+
+.footer-top .foot-left {
+    float: left;
+    margin-left: -65px;
+}
+
+.footer-top .foot-left dl {
+    float: left;
+    margin-left: 65px;
+}
+
+.footer-top .foot-left dl dt {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fefdfd;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 3px rgba(2, 2, 2, .75);
+}
+
+.footer-top .foot-left dl dd {
+    font-size: 14px;
+    color: #a3a3a3;
+    line-height: 30px;
+    text-shadow: 3px 3px 3px rgba(2, 2, 2, .75);
+}
+
+.footer-top .foot-right {
+    float: right;
+    margin-right: 40px;
+}
+
+.footer-top .foot-right .foot-logo {
+    width: 198px;
+    height: 61px;
+    background: url("../img/foot-icon.png") no-repeat;
+    background-position: 0 -82px;
+    margin-bottom: 17px;
+}
+
+.footer-top .foot-right ul {
+    margin-left: -15px;
+}
+
+.footer-top .foot-right li {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+}
+
+.footer-top .foot-right .icon {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/foot-icon.png") no-repeat;
+}
+
+.footer-top .foot-right .weixin {
+    background-position: -70px 0;
+}
+
+.footer-top .foot-right .iphone {
+    background-position: -146px 0;
+}
+
+.footer-top .foot-right .anzhuo {
+    background-position: -230px 0;
+}
+
+.footer-top .foot-right li:hover .foot-hidden{
+    display: block;
+}
+
+
+.foot-right .foot-hidden {
+    display: none;
+    position: absolute;
+    left:-75px;
+    top:-207px;
+}
+.foot-right .foot-hidden em{
+    position: absolute;
+    left:85px;
+    top:186px;
+    display: block;
+    width:23px;
+    height: 15px;
+    background: url("../img/foot-icon.png") no-repeat;
+    background-position: -236px -112px;
+}
+
+/*allRight*/
+.allRight{
+    position: fixed;
+    right:0px;
+    top:80px;
+    width:65px;
+    height: 240px;
+    background-color: #fff;
+    box-shadow: -6px 6px 6px rgba(2,2,2,.17);
+    padding-top:8px;
+}
+.allRight .icon{
+    margin:0 auto;
+    width:38px;
+    height: 50px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.allRight .icon>a{
+    margin:0 auto;
+    display: block;
+    width:24px;
+    height: 24px;
+    padding:13px 0;
+}
+.allRight .text{
+    display: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #185b8f;
+}
+.allRight .all-icon{
+    display: block;
+    width:22px;
+    height: 22px;
+    border:1px solid #8f8f8f;
+    border-radius: 50%;
+    color: #a3a3a3;
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+}
+.allRight .icon:hover .all-icon{
+    display: none;
+}
+.allRight .icon:hover .text{
+    display: block;
+}
+.allRight .right-icon{
+    display: block;
+    width:19px;
+    height: 29px;
+    background:url("../img/foot-icon.png") no-repeat;
+}
+.allRight .icon:hover .right-icon{
+    display: none;
+}
+.allRight .icon-iphone{
+    background-position: -74px -179px;
+}
+.allRight .icon-weixin{
+    width:22px;
+    height: 22px;
+    background-position: 0 -182px;
+}
+.allRight .icon:hover .allHidden{
+    display: block;
+}
+.allRight .allHidden{
+    display: none;
+    position: absolute;
+    left:-168px;
+    bottom:0;
+    width:160px;
+    height: 164px;
+    text-align: center;
+    padding-top:20px;
+    color: #a3a3a3;
+    font-size: 12px;
+    background-color: #fff;
+}
+.allRight .allHidden p{
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
