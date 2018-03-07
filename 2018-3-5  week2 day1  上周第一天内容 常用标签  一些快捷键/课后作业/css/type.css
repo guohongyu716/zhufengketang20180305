@@ -1,12 +1,25 @@
-
 .tops{
+    width:800px;
+    height: 500px;
+    background-color:bisque;
+}
+a{
+    text-decoration: none;
+}
+.tops h3{
+    color:#2a2a2a;
+}
+.tops h3 a{
+    font-size: 16px;
+    color: brown;
+    font-weight: normal;
+}
+.tops li{
+    height: 30px;
+    line-height: 30px;
 
 }
- h3 a{
-    color: red;
-    font-size: 16px;
-    text-decoration: none;
-}
-.box a{
-    text-decoration: none;
+.tops li a{
+    font-size: 13px;
+    color: #555;
 }
