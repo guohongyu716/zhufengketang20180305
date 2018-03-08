@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    *{margin:0;padding:0;}
+    ul{list-style: none;}
+    .top{
+        width:300px;
+        background-color: bisque;
+    }
+    .top p{
+        line-height: 30px;
+        color: #fff;
+        background-color: #ff0000;
+        text-align: center;
+    }
+    .top ul{
+        display: none;
+    }
+    /*.top p:hover+ul{
+        display: block;
+    }*/
+    .top:hover ul{
+        display: block;
+    }
+
+</style>
+<div class="top">
+    <p>我是p元素</p>
+    <ul>
+        <li>无序列表</li>
+        <li>无序列表</li>
+        <li>无序列表</li>
+    </ul>
+</div>
+
+<!--
+<style>
+    /*li{}*/
+    .list1+li{
+        color: red;
+    }
+</style>
+<ol>
+    <li class="list1">1111111</li>
+    <li>2222222</li>
+    <li class="list3">333333</li>
+    <li>444444</li>
+</ol>-->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

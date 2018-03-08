@@ -1,0 +1,72 @@
+/*1. 先把标签的默认样式清除*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/*2.写结构页面样式*/
+.content{
+    margin:0 auto;/*让盒子在水平位置居中*/
+    width:1200px;
+    background-color: #f1f1f1;
+}
+.content h3{
+    height: 60px;
+    line-height: 60px;/*让文字垂直居中*/
+    text-align:center;/*让文字水平居中*/
+    font-size: 24px;
+    font-weight: normal;
+    /*background: red;*/
+}
+.content p{
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+.content .list{
+    width:100%;/*继承父级元素的宽度*/
+    background-color:pink;
+    font-size: 0;
+}
+.content .list li{
+    display: inline-block;
+    width:300px;
+    text-align: center;
+    vertical-align: top;
+}
+.content .list li h5{
+    font-size: 14px;
+    line-height: 40px;
+}
+.content .list li p{
+    text-align: left;
+    font-size: 12px;
+    line-height: 26px;
+    text-indent: 2em;/*首行缩进*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

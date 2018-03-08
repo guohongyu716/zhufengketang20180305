@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;/*去掉a的下划线*/
+}
+.top{
+    width:650px;/*宽度*/
+    height: 500px;
+    background-color: bisque;/*背景颜色*/
+}
+.top h3{
+    color: #2a2a2a;
+    font-size: 16px;
+}
+.top h3 a{
+    color: green;
+    font-size: 12px;
+    font-weight: normal;/*去掉加粗*/
+}
+.top li{
+    height: 30px;/*高度*/
+    line-height: 30px;/*文字垂直居中*/
+}
+.top li a{
+    font-size: 12px;/*字体大小*/
+    color: #555;/*字体颜色*/
+}

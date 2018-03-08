@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--行内式：不推荐使用-->
+<!--<div style="color:yellow;">div元素</div>
+<div style="color: yellow;">div2元素</div>-->
+
+<!--内嵌式：将css样式放在style元素内，在通过css选择器在选择HTML元素-->
+<!--<style>
+    /*css样式*/
+    div {
+        color: red;
+    }
+</style>
+<div>div1</div>
+<div>div2</div>-->
+
+
+<!--外链式：-->
+<!--<link rel="stylesheet" href="style.css" type="text/css">
+<div>div1</div>
+<div>div2</div>-->
+
+<!--导入式：-->
+<style>
+    @import "style.css";
+</style>
+<div>div1</div>
+<div>div2</div>
+
+
+
+
+</body>
+</html>
