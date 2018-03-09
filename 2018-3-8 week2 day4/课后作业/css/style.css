@@ -43,3 +43,9 @@ ul{list-style: none;}
     font-size: 16px;
     color: #1d9fd3;
 }
+.box a:hover{
+    font-weight:bold;
+}
+.box .tox{
+    padding: 0 15px;
+}
