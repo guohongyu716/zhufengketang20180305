@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    color: #2c2d2c;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+a {
+    color: #2c2d2c;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    width: 1200px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    width: 190px;
+}
+
+.nav {
+    width: 800px;
+
+    height: 80px;
+    display: inline-block;
+    /* background-color: yellow; */
+}
+
+.nav ul li {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 58px;
+    display: inline-block;
+}
+
+.nav ul li a {
+    font-size: 15px;
+}
+
+.nav ul li a:hover {
+    color: #087ccc;
+}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.box span i {
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+    background: url(../image/2.png) no-repeat;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.box a {
+    padding-left: 20px;
+}
+
+.box span:hover {
+    color: #087ccc;
+    cursor: pointer;
+}
+
+.box span:hover i {
+    color: #087ccc;
+    background:url(../image/1.png) no-repeat;
+}
