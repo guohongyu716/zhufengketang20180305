@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--行内、行内块级元素和块级元素的相互转换？-->
+<style>
+    /*行内元素转换成行内块级元素*/
+    span{
+        display: inline-block;
+        width:100px;
+        height: 100px;
+        background-color: red;
+        vertical-align: top;
+    }
+    /*div{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: #11a59f;
+    }*/
+
+</style>
+<span>1111<br>33333333</span>
+<span>22222</span>
+<!--<div>div1元素</div>
+<div>div2元素</div>-->
+
+<style>
+    .div1{
+        width:800px;
+        height:100px;
+        background-color: #555555;
+    }
+    .left{
+        display: inline-block;
+        width:50px;
+        height: 50px;
+        background-color: white;
+    }
+    .right{
+        display: inline-block;
+        width:50px;
+        height: 50px;
+        background-color:#f1f1f1;
+    }
+</style>
+<!--<div class="div1">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>-->
+
+<style>
+    .box{
+        width: 300px;
+        background-color: bisque;
+    }
+    .box h1{
+        font-size: 24px;
+        font-weight: normal;
+        background-color: #11a59f;
+    }
+    .box ol{
+        display: none;
+    }
+    .box:hover ol{
+        display: block;
+    }
+   /* .box:hover ol{
+        display: block;
+    }*/
+</style>
+<div class="box">
+    <h1>标签标签</h1>
+    <ol>
+        <li>1111</li>
+        <li>222</li>
+        <li>3333</li>
+    </ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

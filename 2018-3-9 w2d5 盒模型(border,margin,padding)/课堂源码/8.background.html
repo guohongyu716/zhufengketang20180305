@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width:300px;
+            height: 300px;
+            border:2px solid red;
+            background-image: url("pic_02.png");
+            /*background-color:pink;!*背景颜色*!*/
+            /*background-image: url("pic_02.png");!*背景图片*!*/
+            background-repeat:no-repeat;
+            /*
+            background-repeat 背景图片的平铺方式
+                repeat 默认值，平铺
+                no-repeat 不平铺   ---- 常用
+                repeat-x  x轴平铺
+                repeat-y  y轴平铺
+            */
+
+            /*background-position: center center;!*背景图片在元素水平垂直中间*!*/
+            /*
+                background-position 改变背景图片的位置
+                    单位：px、%、英文单词
+                    第一个值： x轴
+                    第二个值： y轴
+            */
+
+            /*background-size: 100% 100%;*/
+            /*
+                background-size 改变背景图片的大小
+                    单位：px、百分比
+                    background-size: 100% 100%; 元素的宽高有多大，背景图片就有多大
+            */
+            /*background: red url("pic_02.png") no-repeat center center;
+            background-size: 100% 100%;*/
+            /*
+            background:背景颜色 背景图片 背景图片是否平铺 改变背景图片的位置
+
+            */
+        }
+    </style>
+</head>
+<body>
+<!--<div class="div1"></div>-->
+
+
+<style>
+.div2{
+    width:300px;
+    height: 300px;
+    border:2px solid red;
+    /*background-image: url("1.jpg");
+    !*background-size: cover;!*等比例把背景图片方法缩小*!*!
+    background-size: 20% 20%;
+    background-repeat: no-repeat;*/
+    /*background: url("1.jpg");*/
+}
+</style>
+<div class="div2"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
