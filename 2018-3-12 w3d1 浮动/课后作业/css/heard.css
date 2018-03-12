@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding:0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    font-size: 14px;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+.header{
+    width:1200px;
+    height: 84px;
+    margin:0 auto;
+    background-color: #f1f1f1;
+}
+.header .logo{
+    float: left;
+    width:176px;
+    height:52px;
+    margin-top: 12px;
+    /* vertical-align: middle;
+    display: inline-block; */
+}
+.header .logo img{
+    width:100%;
+}
+.header .nav{
+    float: left;
+    height: 84px;
+    /* background-color:yellow; */
+    margin-left: 50px;
+ 
+}
+.header .nav ul li{
+    padding-left:50px;
+    line-height: 84px;
+     float: left;
+}
+.header .nav ul li a:hover{
+    color: #2b7dd1;
+}
+.header .right{
+    line-height: 84px;
+    margin-right: 50px;
+    float: right;
+}
+.header .right-car {
+    display: inline-block;
+}
+.header .right-car span{
+    font-size:14px;
+   
+}
+.header .right-car i{
+    width: 24px;
+    height:22px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background: url(../../image/icon.png) no-repeat;
+    display: inline-block;
+}
+.header .right-car:hover{
+ 
+    color:#2b7dd1;
+}
+.header .right-car:hover i{
+    background-position: -41px 0;
+}
+.header .right .right-carhidden{
+
+    display: none;
+}
+.header .right a{
+    margin-left: 25px;
+}
