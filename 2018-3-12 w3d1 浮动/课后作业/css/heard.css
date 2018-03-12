@@ -76,3 +76,47 @@ a{
 .header .right a{
     margin-left: 25px;
 }
+.footer{
+    height:274px;
+    background-color: #2e2e2e;
+}
+.footer .footer-min{
+    width:1200px;
+    margin: 0 auto;
+}
+.footer .footer-left dl{
+    float: left;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+.footer .footer-left dt{
+    font-size: 18px;
+    color:#fefdfd;
+    padding-bottom:30px;
+}
+.footer .footer-left dd{
+    font-size: 14px;
+    color:#ebeaea;
+}
+.footer-right{
+    float: left;
+}
+.footer-right .footer-beijing{
+    width:210px;
+    height:65px;
+    margin-top: 70px;
+    background: url(../image/foot-icon.png) no-repeat;
+    background-position: 0 -90px;
+}
+.footer-right .footer-shouji li{
+    float: left;
+    list-style: none;
+}
+.footer-right .footer-shouji weibo{
+    width:50px;
+    height:50px;
+    background-color: aqua;
+    background: url(../image/foot-icon.png) no-repeat;
+
+}
+
