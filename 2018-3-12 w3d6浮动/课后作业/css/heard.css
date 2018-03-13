@@ -48,6 +48,7 @@ a{
     float: right;
 }
 .header .right-car {
+    position: relative;
     display: inline-block;
 }
 .header .right-car span{
@@ -70,9 +71,18 @@ a{
     background-position: -41px 0;
 }
 .header .right .right-carhidden{
-
+    position: absolute;
+    left:-145px;
+    top:62px;
+    width:400px;
+    height: 500px;
+    background:#ffffff;
     display: none;
 }
+.header .right .right-car:hover .right-carhidden{
+    display: block;
+}
+
 .header .right a{
     margin-left: 25px;
 }
@@ -99,7 +109,8 @@ a{
     color:#ebeaea;
 }
 .footer-right{
-    float: left;
+    float: right;
+    margin-right: 10px;
 }
 .footer-right .footer-beijing{
     width:210px;
@@ -110,13 +121,31 @@ a{
 }
 .footer-right .footer-shouji li{
     float: left;
-    list-style: none;
+    /* width:50px;
+    height:50px;
+    padding-right:5px; */
+    cursor: pointer;
+
+    /* background-color: aqua; */
 }
-.footer-right .footer-shouji weibo{
+.footer-right .footer-shouji li span{
+    display: inline-block;
     width:50px;
     height:50px;
-    background-color: aqua;
     background: url(../image/foot-icon.png) no-repeat;
-
 }
-
+.footer-right .footer-shouji .foot-hidden{
+    display: none;
+}
+.footer-right .footer-shouji .weibo{
+    background: url(../image/foot-icon.png) no-repeat;
+}
+.footer-right .footer-shouji .weixin{
+    background-position: -70px 0;
+}
+.footer-right .footer-shouji .apple{
+    background-position: -140px 0;
+}
+.footer-right .footer-shouji .anzhuo{
+    background-position: -225px 0;
+}
