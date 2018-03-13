@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.header{
+    height: 84px;
+}
+.main{
+    width:1204px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+}
+.header .logo{
+    float: left;
+    height: 52px;
+    width: 176px;
+    margin-top:16px;
+    margin-right:85px;
+}
+.header .logo a{
+    display: block;
+}
+.header .logo img{
+    width:100%;
+}
+.header.nav{
+    float: left;
+}
+.header .nav li{
+    float:left;
+    height: 84px;
+    line-height: 84px;
+     margin-right: 45px;
+}
+.header .nav li.noMargin{
+    margin-right: 0;line-height: 84px;
+}
+.header .nav li a{
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.header .nav li a:hover{
+    color:#2b7dd1;
+}
+.header .header-right{
+    float:right;
+    line-height: 84px;
+    margin-right:39px;
+}
+.header .header-right .car{
+    float: left;
+    
+}
+.header .header-right .car .hidden-car{
+    display: none;
+}
