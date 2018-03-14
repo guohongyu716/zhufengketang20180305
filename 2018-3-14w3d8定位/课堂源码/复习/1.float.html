@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+display: inline-block;缺点：1.间隙 2.基线对齐 3.从左向右排布
+float:left 从左向右排布
+float:left左浮动/right右浮动/none去掉浮动
+    特点：1.脱离文档流(父级元素找不到子级元素)
+          2.在不设置宽高时，宽高是由内容决定的
+          3.所有的元素都可以设置这个CSS属性 a img div....
+          4.图文汇编
+
+清除浮动带来的影响？--4种
+    1、给父级元素设置高度
+    2、给父级元素设置css属性-overflow: hidden;
+    3、在所有浮动元素之后加`<div style="clear:both;"></div>`
+    4、利用伪元素来清除浮动带来的影响
+        .clear:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+    clear:both;必须满足三个条件：
+        1. 必须是块级元素
+        2. 在所有浮动元素之后
+        3. 这个块级元素不能带有浮动的属性
+-->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        padding: 0;
+        list-style: none; /*height: 150px;*//*overflow: hidden;*/
+    }
+    li {
+        /*display: inline-block;
+        vertical-align: top;*/
+        float: left;
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+    }
+    /*ul:after,ol:after{
+        display: block;
+        content: "";
+        clear: both;
+    }*/
+    .clear:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+</style>
+<ul class="clear">
+    <li>11111<br>111111</li>
+    <li>2222</li>
+    <li>333</li>
+    <li>4444</li>
+    <!--clear：both;-->
+    <!--<li style="float:none;clear: both;width:0;height:0;border:0"></li>-->
+    <!--<div style="clear:both;"></div>-->
+</ul>
+<ol class="clear">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+
+
+
+
+
+<div style="height: 100px;background-color: yellow"></div>
+
+<!--
+
+<style>
+    *{margin:0;padding:0;}
+    h3{
+        width:400px;
+        height: 40px;
+        line-height: 40px;
+        border:1px solid red;
+        font-weight: normal;
+        font-size: 16px;
+    }
+    h3 a{
+        /*margin-left:260px;*/
+        float: right;
+        font-size: 12px;
+        color: #555;
+        margin-right:10px;
+    }
+</style>
+<h3>
+    珠峰故事珠峰故事珠峰<a href="">查看更多</a>
+</h3>
+-->
+
+
+</body>
+</html>
