@@ -159,6 +159,49 @@ ul {
     border-radius: 5px;
 
 }
+/* banner样式 */
+.banner{
+    position: relative;
+    width:1204px;
+    height: 360px;
+    overflow: hidden;
+}
+.banner .bannerimg{
+    width:4816px;
+}
+.banner .bannerimg li{
+    float: left;
+}
+.banner-sidnav{
+        position: absolute;
+        left:0;
+        top:0;
+        width:240px;
+        height: 360px;
+        background-color: rgba(0,0,0,.2);
+    }
+.banner-sidnav li{
+    height: 70px;
+    line-height: 70px;
+    margin-left:20px;
+}
+.banner-sidnav li a{
+    float: left;
+    width:190px;
+    font-size: 14px;
+    color: #fdfdfe;
+   text-align: center;
+    border-bottom: 1px  solid  #e1e1e1;
+}
+.banner-sidnav li .ban-hidden{
+    display: none;
+}
+
+
+
+
+
+
 
 /* footer页尾样式 */
 .footer{
