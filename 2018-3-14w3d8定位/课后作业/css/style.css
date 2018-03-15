@@ -20,7 +20,7 @@ ul {
 .main{
     width:1204px;
     margin: 0 auto;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
 }
 .header .logo{
     float: left;
@@ -114,7 +114,7 @@ ul {
     float:right;
     color: #666767
 }
-.header .header-right .hidden-car .hiddencar-center {
+.header .header-right .hidden-car .hiddencar-center .gwc{
     width:70px;
     height: 70px;
     margin: 0 auto;
@@ -253,6 +253,113 @@ ul {
     line-height: 14px;
     margin-top: 25px;
 }
+
+
+
+/* container实战 页中实战样式 */
+.conshizhan{
+    height: 266px;
+    margin-top: 20px;
+}
+.conshizhan h3{
+    height:56px;
+    line-height: 56px;
+    font-size:16px;
+    font-weight:normal;
+}
+.conshizhan ul li{
+    position: relative;
+    margin-right: 63px;
+    float: left;
+    width: 251px;
+}
+.conshizhan .contsz{
+    margin-right:0;
+}
+.conshizhan  li img{
+    display: inline-block;
+}
+.conshizhan  li .conhidden{
+    position: absolute;
+    top:85px;
+    left:0;
+    height:100px;
+    width: 253px;
+    background-color: #fdfdfe;
+    /* display: none; */
+}
+.conshizhan .conhidden h4{
+    font-size: 14px;
+    font-weight: normal;
+}
+.conshizhan .conhidden p{
+    font-size: 12px;
+    margin-top: 17px;
+    color:#b9b8b8;  
+  
+}
+.conshizhan  li:hover .conhidden{
+    position: absolute;
+    top:43px;
+    left:0;
+}
+.conshizhan li h5{
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    width: 253px;
+    height: 48px;
+    font-weight: normal;
+    font-size: 12px;
+    color:#c71b1b;
+    background-color: #fdfdfe;
+   
+}
+.conshizhan  h5 span{
+    float:right;
+    font-size: 12px;        
+    color:#868484;
+}
+
+
+/* con-bottom底部样式  */
+.con-bottom{
+    height: 470px;
+    background-color: #4e91d7;
+}
+.con-bottom .con-bottom-lf{
+    float: left;
+    height:380px;
+    width:223px;
+    padding:35px 15px;
+}
+.con-bottom .con-bottom-lf img{
+    height:100%;
+    width:100%;
+}
+.con-bottom .con-bottom1 {
+    float: left;
+    padding-top: 35px;
+}
+.con-bottom .con-bottom1 li{
+    height:185px;
+    width:397px;
+    padding-bottom: 10px;
+}
+.con-bottom .con-bottom1 li img{
+    height:100%;
+    width:100%;
+}
+.con-bottom .con-bottom2{
+    float: left;
+}
+
+
+
+
+
+
+
 
 
 
