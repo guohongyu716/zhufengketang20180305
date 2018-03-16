@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.main{
+    width: 1204px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    display:block;
+    content:"";
+    clear:both;
+   }
+.header .logo{
+    float: left;
+    width: 176px;
+    height: 52px;
+    margin: 17px 60px 17px 0;
+}
+.header .nav{
+    width:786px;
+    height:52px;
+    float: left;
+}
+.header .nav li{
+    
+    float: left;
+}
+.header .nav li a{
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.header .nav-right{
+    float:right;
+}
