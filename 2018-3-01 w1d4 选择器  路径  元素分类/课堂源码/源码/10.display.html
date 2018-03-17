@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;}
+        .left{
+            display: inline-block;
+            width:100px;
+            height: 100px;
+            background-color: red;
+        }
+        .right{
+            display: inline-block;
+            width:100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<!--块元素转行内块-->
+<!--<div class="left"></div>
+<div class="right"></div>-->
+
+<!--行内转行内块-->
+<style>
+    span,strong{
+        /*display: inline-block;*/
+        display: block;
+        width:100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<span>我是span</span>
+<strong>我是strong</strong>
+
+<!--行内块转块级元素-->
+<style>
+    img{
+        display: block;
+    }
+</style>
+<img src="img/0.jpg" alt="">
+<img src="img/0.jpg" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            background-color: #0c27ff;
+            /*height: 150px;*/
+            /*overflow: hidden;!*超出隐藏*!*/
+        }
+
+        li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+clear:both;清除浮动
+必须保证两个提前：
+    1. 所有设置浮动元素之后  clear:both;
+    2. 必须是块级元素
+-->
+<style>
+    /*ul:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    ol:after{
+          display: block;
+          content: "";
+          clear: both;
+      }
+    .div1:after{
+        display: block;
+        content: "";
+        clear: both;
+    }*/
+    .clear:after{
+         display: block;
+         content: "";
+         clear: both;
+     }
+</style>
+<ul class="clear">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <!--after-->
+    <!--<div style="clear: both;"></div>-->
+
+</ul>
+<div style="height: 200px;background-color: yellow"></div>
+<ol class="clear">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<div class="div1 clear">
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+    <!--after-->
+</div>
+</body>
+</html>

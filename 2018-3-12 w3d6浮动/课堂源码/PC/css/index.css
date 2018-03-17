@@ -1,0 +1,93 @@
+/*版心--公共的*/
+.main{
+    width:1204px;
+    margin:0 auto;
+    background-color: #f1f1f1;
+}
+.header{
+    height: 84px;
+}
+.header .logo{
+    /*display: inline-block;
+    vertical-align: top;*/
+    float: left;
+    width:176px;
+    height: 52px;
+    margin-top:16px;
+    margin-right:85px;
+}
+.header .logo a{
+   display: block;
+}
+.header .logo img{
+    width:100%;
+}
+
+.header .nav{
+    float: left;
+    /*display: inline-block;
+    vertical-align: top;*/
+}
+.header .nav li{
+    /*display: inline-block;
+    vertical-align: top;*/
+    float: right;
+    line-height: 84px;
+    margin-right:45px;
+}
+.header .nav li.noMargin{
+    margin-right:0;
+}
+.header .nav li a{
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.header .nav li a:hover{
+    color: #2b7dd1;
+}
+.header .login{
+    float: right;
+    /*display: inline-block;
+    vertical-align: top;*/
+    /*margin-left:55px;*/
+}
+.header .login .car{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 84px;
+    margin-right:20px;
+}
+.header .login .car .icon-car{
+    font-size: 14px;
+    color: #666767;
+    cursor: pointer;
+}
+.header .login .car .icon-car i{
+    display: inline-block;
+    width:24px;
+    height: 22px;
+    background: url("../img/icon.png") no-repeat;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.header .login .car:hover .icon-car i{
+    background-position:-49px 0;
+}
+.header .login .car:hover .icon-car{
+    color: #2b7dd1;
+}
+
+
+
+.header .login .link{
+    line-height: 84px;
+    color: #666767;
+    font-size: 14px;
+    margin-right:20px;
+}
+.header .login .hidden-car{
+    display: none;
+}
+
+
+

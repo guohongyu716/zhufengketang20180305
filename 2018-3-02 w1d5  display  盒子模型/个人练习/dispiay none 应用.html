@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style:none;}
+        .cont{
+            width:300px;
+            background-color:red;
+
+        }
+        .cont h1{
+            font-size:16px;
+            color:green;
+            background-color:coral;
+            font-weight: normal;
+            text-align:center;
+            line-height:30px;
+
+        }
+        .cont ul{
+            display:none;
+        }
+        .cont li{
+            background-color:cadetblue;
+            color:#fff;
+            font-size:14px;
+            line-height:30px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .cont:hover ul{
+            display:block;
+        }
+        /* 鼠标经过控制写给ul */
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>鼠标经过</h1>
+        <ul>
+            <li>无需列表</li>
+            <li>无需列表</li>
+            <li>无需列表</li>
+            <li>无需列表</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html><html><head><title>第二天</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h1 id="第二天">第二天</h1>
+
+<ul><li>HTML中常用的元素有哪些？ <br>
+<ul>
+<li>h1-h6 标题类 <br>
+<ul>
+<li>默认有加粗的效果</li></ul></li>
+<li>ul 无序列表  默认前面带有小黑点 <br>
+<ul>
+<li>li 列表项</li></ul></li>
+<li>ol有序列表 默认前面带有序号 <br>
+<ul>
+<li>li 列表项</li></ul></li>
+<li>dl 自定义列表  常用在新闻摘要和页面尾部 <br>
+<ul>
+<li>dt 自定义标题 <br>
+<ul>
+<li>只能出现一次</li></ul></li>
+<li>dd 自定义的描述 <br>
+<ul>
+<li>dd可以出现多次</li></ul></li></ul></li>
+<li>p 段落</li>
+<li>div 区分大模块  无意义</li>
+<li>span 区分行内小模块   无意义</li>
+<li>a 超链接、锚点 <br>
+<ul>
+<li>href=””  地址或者路径</li>
+<li>target=”_blank” 在新的窗口打开页面，当前的窗口还在</li>
+<li>a锚点是配合id来使用的，一个页面id名只能出现一次，不能重复 <br>
+<ul>
+<li>如果你想要锚点的效果，页面必须出现滚动条</li></ul></li>
+<li>防止a链接跳转 <br>
+<ul>
+<li>href=”###” 添加两个#以上</li>
+<li>href=”javascript:;” 空，占位</li></ul></li></ul></li></ul></li>
+</ul>
+
+<pre class="prettyprint hljs-dark"><code class="hljs javascript"><div class="hljs-line">&lt;h2 id=<span class="hljs-string">"top"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#bot"</span>&gt;</span>人物履历<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span></span>
+</div><div class="hljs-line">&lt;sup&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#top"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"bot"</span>&gt;</span>[1]<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span></span>
+</div></code></pre>
+
+<p></p><pre class="prettyprint hljs-dark"><code class="hljs haml"><div class="hljs-line">-<span class="ruby"> img 图片 </span><br><span class="ruby">
+</span></div><div class="hljs-line">    -<span class="ruby"> src=”” 图片路径或者名称 </span><br><span class="ruby">
+</span></div><div class="hljs-line">    -<span class="ruby"> alt=”” 图片的描述 </span><br><span class="ruby">
+</span></div><div class="hljs-line">        -<span class="ruby"> 当图片路径错误或者不存在时，alt描述会出现</span>
+</div></code></pre><p></p>
+
+<ul><li>i 斜体</li>
+<li>em 强调 斜体</li>
+<li>strong 强调作用 **加粗**</li>
+<li>b  __加粗__</li>
+<li>table 表格 <br>
+<ul>
+<li>caption 标题</li>
+<li>thead 表头 <br>
+<ul>
+<li>tr 行 <br>
+<ul>
+<li>th 列</li></ul></li></ul></li>
+<li>tbody 表身 <br>
+<ul>
+<li>tr 行 <br>
+<ul>
+<li>td 列</li></ul></li></ul></li>
+<li>tfoot 表尾 <br>
+<ul>
+<li>tr 行 <br>
+<ul>
+<li>td 列</li></ul></li></ul></li></ul></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line">工作中经常用的
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</div><div class="hljs-line">        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+</div><div class="hljs-line">    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</div></code></pre>
+
+<ul><li>表单类 <br>
+<ul>
+<li>form</li>
+<li>input <br>
+<ul>
+<li>type=”text” 文本框</li>
+<li>type=”password” 密码</li>
+<li>type=”radio” 单选按钮</li>
+<li>type=”checkbox” 多选按钮</li>
+<li>type=”button” 提交、点击按钮 <br>
+<ul>
+<li>value=””  值 </li></ul></li></ul></li>
+<li>textarea  文本域 <br>
+<ul>
+<li>minlength  最小长度</li>
+<li>maxlength 最大长度–<strong>常用</strong></li></ul></li>
+<li>lable 来描述表单功能</li>
+<li>select  下拉框 <br>
+<ul>
+<li>option 值</li></ul></li></ul></li>
+</ul>
+
+<blockquote>
+  <p>表单类一般用在页面的登录、注册和调查问卷上</p>
+</blockquote>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs stata"><div class="hljs-line">&lt;<span class="hljs-keyword">form</span>&gt;
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">label</span>&gt;是用来描述表单功能的&lt;/<span class="hljs-keyword">label</span>&gt;
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span>&gt; 文本框
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"password"</span>&gt; 密码框
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span>&gt; 单选按钮
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"ok"</span>&gt; 吃
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"ok"</span>&gt; 喝
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"ok"</span>&gt; 玩
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"radio"</span> name=<span class="hljs-string">"ok"</span>&gt; 学习
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span>&gt; 多选按钮
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span>&gt; 吃柚子
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span>&gt; 喝酒
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span>&gt; 抽烟
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"button"</span> value=<span class="hljs-string">"点击按钮"</span>&gt;  点击按钮
+</div><div class="hljs-line">    &lt;textarea maxlength=<span class="hljs-string">"10"</span> minlength=<span class="hljs-string">""</span>&gt;文本域&lt;/textarea&gt;
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">label</span>&gt;用户名&lt;/<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span>&gt;
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">label</span>&gt;密码&lt;/<span class="hljs-keyword">label</span>&gt;&lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"password"</span>&gt;
+</div><div class="hljs-line">    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"button"</span> value=<span class="hljs-string">"提交"</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-keyword">form</span>&gt;
+</div></code></pre>
+
+
+
+<h3 id="标签语义化">标签语义化</h3>
+
+<p>合理的标签做合理的事情 <br>
+为什么要遵循标签语义化：</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs lsl"><div class="hljs-line"><span class="hljs-number">1</span>、利于SEO优化（也就是搜索引擎的抓取，搜索引擎的爬虫也依赖于标记来确定上下文和各个关键字的权重）；
+</div><div class="hljs-line"><span class="hljs-number">2</span>、在样式丢失的时候，还是可以比较好的呈现结构；
+</div><div class="hljs-line"><span class="hljs-number">3</span>、更好的支持各种终端，例如无障碍阅读和有声小说等；
+</div><div class="hljs-line"><span class="hljs-number">4</span>、利于团队开发和维护，W3C给我们定了一个标准，那么团队中都遵循这个标准，那么代码的差异就会缩小，在开发和维护的时候就可以提高效率；
+</div></code></pre>
+
+<p>日常工作中怎样遵循标签语义化：</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line">1、尽量减少使用无意义标签，例如span和div；
+</div><div class="hljs-line">2、尽量不使用标签本身的css属性，例如b、font、s等标签，如果需要这些样式，那么使用css样式来进行添加；
+</div><div class="hljs-line">3、在需要强调的部分，使用strong、em，但是样式尽量使用css样式来描述；
+</div><div class="hljs-line">4、表格搭建时，使用<span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>表格头部<span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>表格身体<span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span>表格尾部<span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span>；
+</div><div class="hljs-line">5、列表搭建时，使用<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>无序列表<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>有序列表<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>定义列表<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>；
+</div></code></pre>
+
+
+
+<h2 id="html的基本结构">HTML的基本结构</h2>
+
+<p>一个HTML文件就是一个网页，可以又称作一个文档(document)</p>
+
+
+
+<h3 id="doctype-html文档声明"><code>&lt;!DOCTYPE html&gt;</code>文档声明</h3>
+
+<p>作用：定义这个文档的类型，浏览器会先识别这句话，会按照这个类型去解析这个文档</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</div><div class="hljs-line">HTML5的文档声明，浏览器会根据HTML5类型来解析这个页面
+</div><div class="hljs-line">
+</div><div class="hljs-line"><span class="hljs-meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
+</div><div class="hljs-line">HTML4的文档声明
+</div></code></pre>
+
+<blockquote>
+  <p>一般高版本兼容低版本，所以在工作中我们默认写高版本就可以了(html5文档声明) <br>
+  文档声明不区分大小写 <br>
+  文档声明必须放在第一行(因为浏览器是从上到下解析的) <br>
+  必须写文档声明，如果不写就会发生怪异事件 <br>
+  文档声明不是一个标签，它只是一个声明</p>
+</blockquote>
+
+
+
+<h3 id="html元素">html元素</h3>
+
+<p>此元素告诉浏览器其自身是一个html文档 <br>
+是由开始标签和结束标签组成的</p>
+
+
+
+<h4 id="langen-语言"><code>lang="en"</code> 语言</h4>
+
+<p>因为我们写的都是中文的，所以可以把这句话删掉</p>
+
+
+
+<h3 id="head元素">head元素</h3>
+
+<p>整个文档的头部，head元素自带隐藏功能，display:none;</p>
+
+
+
+<h4 id="meta-元信息"><code>meta</code> 元信息</h4>
+
+<ul><li>charset   文档编码 <br>
+<ul>
+<li>UTF-8  国际</li>
+<li>gb2312  国标</li></ul></li>
+<li>name=”keywords” 关键字 <br>
+<ul>
+<li>content=”关键字的内容”</li></ul></li>
+<li>name=”description” <br>
+<ul>
+<li>content=”描述网站的一句话”</li></ul></li>
+</ul>
+
+<blockquote>
+  <p>关键字、描述是为了网站的seo优化、引擎搜索</p>
+  
+  <ul><li>title 标题 <br>
+  <ul>
+  <li>一个页面只能有一个标题</li>
+  <li>出现在页面的页卡位置</li></ul></li>
+  <li>link <br>
+  <ul>
+  <li><code>&lt;link rel="icon" href="icon.png" type="image/x-icon" /&gt;</code> <br>
+  <ul>
+  <li>rel  不能缺少的  icon 图标</li>
+  <li>href=””   图标的地址或者路径</li>
+  <li>type 类型    “image/x-icon” 图标 可以省略，但是不建议省略</li></ul></li>
+  <li>一般放在head头部内</li></ul></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="body元素">body元素</h3>
+
+<p>定义整个文档的主体部分，所有展示给用户的内容，都要在这个元素内 <br>
+body中常用的html元素：div  ul li  img…</p>
+
+
+
+<h2 id="css层叠样式表">CSS层叠样式表</h2>
+
+<ul><li>css的作用</li>
+<li>css和html如何融入在一起</li>
+<li>在css文件中，如何选择一个html元素，将样式添加给这个元素</li>
+</ul>
+
+<p>作用：给html元素添加静态或者动态的样式</p>
+
+
+
+<h3 id="css和html如何融入在一起css的四种引入方式">css和html如何融入在一起(css的四种引入方式)</h3>
+
+<ul><li>行内式：直接写在标签内，通过标签属性style引入</li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs applescript"><div class="hljs-line">&lt;<span class="hljs-keyword">div</span> style=<span class="hljs-string">"color:red;"</span>&gt;我是<span class="hljs-keyword">div</span>元素&lt;/<span class="hljs-keyword">div</span>&gt;
+</div><div class="hljs-line"><span class="hljs-keyword">div</span> 标签名
+</div><div class="hljs-line">style  标签属性名
+</div><div class="hljs-line"><span class="hljs-string">"color:red;"</span>  标签属性值
+</div><div class="hljs-line">
+</div><div class="hljs-line">&lt;开始标签 style=<span class="hljs-string">"css属性名:css属性值;"</span>&gt;内容&lt;/结束标签&gt;
+</div></code></pre>
+
+<ul><li>内嵌式：将css代码写在style元素内，通过css选择器来选择html元素，将css样式添加给这个元素</li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+</span></div><div class="hljs-line">    <span class="hljs-selector-tag">div</span>{<span class="hljs-attribute">color</span>:red;}
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>div1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>div1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre>
+
+<ul><li>外链式：将css代码单独放在一个css文件中，再通过link标签将这个css文件引入到html页面中</li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs flix"><div class="hljs-line">&lt;link <span class="hljs-keyword">rel</span>=<span class="hljs-string">"stylesheet"</span> href=<span class="hljs-string">"css.css"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text/css"</span>&gt;
+</div><div class="hljs-line"><span class="hljs-keyword">rel</span> 不能缺少
+</div><div class="hljs-line"><span class="hljs-string">"stylesheet"</span> 样式表
+</div><div class="hljs-line">href=<span class="hljs-string">"css文件路径或者地址"</span>
+</div><div class="hljs-line"><span class="hljs-keyword">type</span> 类型  可以省略，但是建议写全
+</div></code></pre>
+
+<ul><li>导入式：@import “url”; 都是引入一个单独的css文件 <br>
+<ul>
+<li>在style元素内</li>
+<li>@import “url”;既不是html标签，也不是css样式</li>
+<li>@import “url”;它一条声明语句</li></ul></li>
+</ul>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+</span></div><div class="hljs-line">   @<span class="hljs-keyword">import</span> <span class="hljs-string">"css.css"</span>;
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div></code></pre>
+
+<blockquote>
+  <p>在工作中，常用的引入方式是外链式</p>
+</blockquote>
+
+
+
+<h2 id="外链式和导入式的区别-面试题">外链式和导入式的区别  面试题</h2>
+
+<p>link和@import虽然都是引入外部的css文件，但是他们是由天差地别的区别的 <br>
+link是html标签，@import完全是css提供的方式，要写在css文件或者style标签中。 <br>
+他们的加载顺序也是有区别的，当一个页面被加载的时候，link引用的css文件会被同时加载，而@import引入的css文件会等页面全部下载完后再加载。 <br>
+当使用javascript控制DOM去改变css样式的时候，只能使用link标签，因为@import是不能被DOM控制的。</p>
+
+
+
+<h2 id="css选择器">CSS选择器</h2>
+
+<p>语法：选择器{css属性名:css属性值;}</p>
+
+
+
+<p><img longdesc="./1509443406926.png" alt="Alt text" title="" type="image/png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZIAAACeCAYAAAAYN4w1AAAeTElEQVR4Ae2dC4wcxZnHa7F9zHIcuzZgeyBne2MraO0cju0IdDbBkk95nBwIRCYiZ+EcCgKRFyIgwIlMEtCFhyCIPA5hEQG2QCicFGLiPA4FCYN85uRH7GA2INlr+yBDEPbuBsc74aE5/Xv5Zmtrq3t6urv6Nf+SRt1dj6/q+33V9XVXdfd0NRqNhmIgARIgARIggYgETopYjsVIgARIgARIwCNAR8KOQAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIsAHUksfCxMAiRAAiRAR8I+QAIkQAIkEIvA1FilWbgwBLq6ulq2tdFoNPMgv34sCX7xkp7W1myHeZxWO1gPCZCAUnQkHdQLbI5B1MdA7BfyOkibbTaPg/T107WI8abeNh10Fn729Iu3yStanKmbeVw0ffLWXjqSvFnEYXtw8iQV8nAihhkck9I373J0FmZbg+yeBzua7XV1bHIwj4MYumpTWeTSkZTFkiH0ME8Uv0FETjA9XeJQjezr6SGqTyyLXq+0RW8X9k1dE6s8p4J0DnGbqPONKytP5fU+UVYds+JNR5IV+YzqNQcc/Vg/0dA8/Vj283gCStsEqa6TxJV9a2NgxoGBsNHtKHF+6UVn10pX6GdjVXS902w/HUmatHNSl5w0ficY0mVw0fPkofnSrjy0JW9tMNnox2JzabN+LPt5s7W0Nemt6CtydU4Sx217BOhI2uNVitz6iaPv25TDSWfm0Y/Nk9ImI8m4Vu1Jsq4iyhJ7wEb6vuii89PzSHrZtnpfLZtuedKHjiRP1kihLTK4oKqwA0mUMimo0qxCb5/o1UzssB194NT3bRh0pyLpehmTq+Qp0raVjkXSJc9tpSPJs3UctE0fKCDePC7i4GHq4ABbIUTqtgMT/dhPAT1P2DJ+sooSr+uMNrP/xLccHUl8hrmXYA4QciKZ8UU9oUQfMURR9ZD2R92aepvHJqeo9RS9nMml6Prkof10JHmwQgZtkJMJWwwwcmw2xRavx2U5OEk7ZKu3HXFZtk1vi8t9U0/R2Yy3MXLZrjzLFkbSRrIREtG3XQ2TanRZLEkCJJAyAd1hyL4+MOL0lmM51W35bM2W/La0IsV1mr5Z2IaOJAvqrJMESIAESkSAX/8tkTGpCgmQAAlkQYCOJAvqrJMESIAESkSAjqRExqQqJEACJJAFATqSLKizThIgARIoEQE6khIZk6qQAAmQQBYE6EiyoM46SYAESKBEBOhISmRMqkICJEACWRCgI8mCek7r3Lhxo8KvaKGo7S4aZ7aXBPwI0JH4kWE8CZSIAJ3tuDHJYpxFUnt0JEmRpBwSIAES6FACdCQdaniqTQIkQAJJEaAjSYok5ZAACZBAhxKgI+lQw1NtEiABEkiKAB1JUiQphwRIgAQ6lAAdSYcanmqTAAmQQFIE6EiSIkk5JEACJNChBOhIOtTwVJsESIAEkiJAR5IUScohARIggQ4lQEfSoYan2iRAAiSQFAE6kqRIUg4JkAAJdCgBOpIONTzVJgESIIGkCNCRJEWSckiABEigQwnQkXSo4ak2CZAACSRFYGpSgtqRMzz8hqrVhpRS70woVqmcpvr6+ry44eFhVasdnpBuO3BZplKpKMifOXO6mjKlYqs+dly9Xle1Wk1he+LEiaa8U045RfX393vHSNu/f38zzW8nbhmRu2vXLtm1buPW40oftDuvbQPIPLTNz7Z5aJu1sznkZrLIGwO0p7e3W02fPlthLMpzSNWRDAwMqMHBgx6P3t5eVamY1f+dqtfhYBD+pkZH6x/sB23clRkaOq7q9dfUnj111d+/sOnkgloTNg3OY//+Pero0bfVmWee4XUUncfo6F+aLOr1v6murvdaio5bRipoVZdeD8q0yo88aZRBO9KoJy19XNTjZ6tO5GayyBuDY8feVLXae2p4eJeaNesMtWLFSnSJXIauRqPRSKNlzz77O6+apUsXqUrl5DSqTKyOoaERT1a1Oi8RmXCoAwMvf+CcZiciMwkhmzY96YlZt+6yJMSlJqOo7U4NkFKKjMZpF5EFxqCZM2c7mxkZpxNtz7wliCYlRKm+vg+panVmiJz5yzJ9eo/XqPffH79DijPVhdvUVatWFM6h5s8ybBEJdAYBjEHvvjvqKfvqq6+o/v7FuVI8lcV2DMBFdSK6tWDIvXv3qh07XlS6U9HztNofY4FpvWLdlbXSi+kkQALuCWAMqtXeUpjVyFNw6kjG1kReaXrSPCketS0LF35EjYwcV0eO1NoSgTWRgYG9pWLRFgBmJgESSIQAlgcwNY4HkvISnDqSffv2KZkWyovCSbRjyZJF6sCBAe9Jq7Dydu7839w/eRFWF+YjARLIjgBmM5Ys+aiSdefsWjJeszNHMjj4ijr99H8o5RQOnONJJ53sPbY7jtJ/b3BwUE2ZMrUU03v+WjKFBEggLQJYKpg2barC2JKH4MyRvPTSH9WiRQvzoKOTNuDhAXmUuVUFY09oLWiVjekkQAIkEJrAggXzVK32p9D5XWZ04kjwwtmbb/6plNNaYgxcEfz1r8dDLbq/9trrvBsRcNySAAkkQqBanaWOHn0r1BiUSIUBQpw8/js0NKSq1TkB1ZYjqbt7mnr77brq7fV/6xRv8cPgRQhFe39EmBa13dJ+bkkgCgGslWDKvNUYFEV2u2WcOBI8TZD3V/rbBWXL39399wpOE2/p+wV8CmbGDP90v3KMJ4EkCdDZjtMsE4uenlNbjkHjmrvbczK1hW9G9fSUf/Ds6pra8sktsKhUTnVnQUomARLoWALd3f6zIWlCcXJHMjKSn+ebXcLs6ztbdXcHO8xOYeGSM2WTAAnYCeC9tkpluj0xxVgnjqRaPSPkBxdT1NRBVXgMuFIJdiTV6lnehwQdVE+RJEACJJALAk6mtnKhGRtBAiRAAiUngC+D5+ENdzqSGB1tcPCN3LwQFEMNFiUBEigogYMHD6uDB1/JvPVOHEm1Orcwj7zGsQD+v2Bo6M04IkKXfeGF/1FXX/019elPX6xuuunboctFyfjYY0949bz88qtRiue+jAv9arU3m/aBjbZu/XXuObCB6ROQvveFL1yhsF+W4MSR4HHYJL+xhQENJ2cRwY+xCF5HadWZMCh98pOr1eHDR9TKlReoxYv/qVWRWOmoZ9u2F9SxY0djyclr4aT1gxNZsuQ8tXnz402V9+79Q3Pfxc73v3+30/MB51t39wwXTY8s8/zzL/TGgbACMG7Mnj0vV3rMnTvXO4d7e3vUVVd9xflFYVhWcfM5WWyP2yizPAY0DGwYRNsN+EOYs87qUxs23KK+9a2b2i0eO3+1WlX1erxH9L75zVvUhRdeoH772y2x20MByRO477771cjIX9Qzz2xVF1zwz8lXYJF4++13en1i7drLLanxo1xfrIRtIZzB4OAB9eijj6t9+17ydA5TFuf9pZde5tklTP608qB/SB+ZN2+Ogh2vv/66wn/5wokjkQ+JVavxrsTjGBdTQYcPH1Y//OF/xhGTi7JHjvyf+tKX1uaiLWzEZAJy9yEDxOQcxYu5++7/yEWjr7/+Ru8isp3GwIl85jMXKVz14wcHlMdw4YWfUErdqQ4cOFB4R+JkaqteT2/twK+DYCoIt45ZdyL8DwmmPlwHXLlh3hXTEfidc85ib85er9uWB1MkYUPY8ljDwdQIAqYj0S4co7wEyaPHmWlB5SEXUx2iL/Zx8WAGs83I99xzL5jZmsdop7S9GRmwAz327t3n5ZCyenkMaljbkikWbHGMeD1AH5RDe2ET2E/saE7pinzUa6tTl2vbBydbX9FtIfaR8tI+vT59X/JhC910HaAH6tP7ouQXuaaOko678NHRY95P4lptr7nma16W3/zmad+vTki9YIG2in3MfgQm0BPtN23mlyay/XRq1f4ipju5I3EJAusFt912h+cgenpOU+vWrVW2qyd0PgR0FDiVrAIezcOivMt/iASTNWvWKvD4+tev9a7Cfv/7P3hz9rh9xpQeOv2qVZ/yMEgeDKi4tT506IjauPHHgYjaKY8rdExF4uR7+umtTbn6movk0eMko6T5lccg96MfPeDpeu+9dym89Ik+ATvr00sYuETnK674NwUW0HXLll9KVZO2aHdSAQMProxxMaPXj7UUOAEMdLKWKOs2aG9PT4/63Oc+69kRd9S4IMLcehJ3PNJX5sz5R2+6F7qir4AJ+CxcODb9KzYIYoG+Dd3Q7/QAnaHPhg3r1eLF53ozAzfccIu3joQ/dxOdUUb0jjJtrdcp+3DS27Y9r5599r8n1CPpspV616z5osf7G9/4ihoeHlGbNj3m9aODB//onbN44Q9tw3mC8LOfbRYR6sorr/L0R59zqVOzwhzvFMqRyDTVxRd/1jvRfvGLX3oDCm5fs1j/SMOucpU9d67/RzC//OVrvZPZPEkxkO7evctrJqYIMI+/a9cOhZMDAcwwWGNgg0MOGqiilMfUogzs5tWczMHPmHG6L0ZbeTg0OBFzzWv58uXeWhj6iOhx3XU3TNIZlcnctK1irEW1E3ARI4OuuYb1wAMPegPNPffcob761WuaYqH7jTeuV0g3+615YYTpDzhIDHCiF+rBVT4GabPOZiU+O1hrQNixY9uEwQ/2qdX+7FNKKazFmOsxGLThSDBoS/jJT8Z0FrsjHu3GOYqLnccff2ICC/RrMA/q3yK71RZ1wyGiPdLHW5WBA9FtgLEFvL/znduaF1dIh7PFRRHqgC1xMQPdH3povL9JXWF1kr/ZgOMT24qMom0L5Uhw4jzxxObmCXDttdeo/v7F6tFHH5vQGYpmBL/24uS+4Yab1bnnfnTSSSxlcIUJB4HBSr8qQjruglav/lfvlhxX2hddtHrSCfbd727wThCcgH6dGe2IUv7FF7dJMye1zXYX2cz8wY6t/B13jE3FwfZ6gO4YkOQOCG3Gvk1nvZy53+7AbJbXj3Ghg6t13YkgHce3336HQro+iCENA5kexCa4gg4TMJ1i5sXAZjqB7du3e31DZIKf2X8kzbbFgIoLEAyk+qANh4f+Ku2WsuiHCFu2bJ3Aw+agpEw7W+gN52y2p5WMsXWK8VxoN+7Wnnvu+fFIpdSDD/7Yu7OC3RBwMYO7TJMr0sLqBN6YHcDFzyWXXDKB44TKC3BQKEeCW0y9s2MfziXJ6Yg82AwnxaZNj3t64crbHDT1NuJqGAEc/ML+/S97SR/72OTHhmUQEDk2GXHL22RGjZN24km8oBDU5qBySabhitXvDsdVv5V+o+uBNsiAhytwOFjcHWDAXLnyE97j5J///KWhp19x8YJBG4OgyJX6oDMC7pjSDJj+w8COKUC5i0f98ta3xJkOztbGefPmThpTMNY8/PBD3lQpdIezbDUdbJNtxuGCCuMapjTh8GGPMBdZIqfUH20UJcu+/fCH5yql4j3aa2Mkz5rjJMA6Bq5WdAdqK9NpcZg6YZhMoNUdFQZSzP/jkWU4ZdxVbN6smlfzpmMwa8DUIqZS4Zz8BjwMsli7soWgqUxb/nbixnQZf5dHLyvrpLJ2qqeF3cf/CmGwh7PEOZpEwJ0zznGsi4lTb0duX9+c8n60sR0QRc6LP5Zp9dHGKPrhZMcP0x5Yw8DVirn+IXLRsRGwnuB3tTV//nwvDxaazSBP0ogcMx3HccvbZEaNk3aiTUEPMMiAhQXUrAKu+A8dOmytHvFIzyKAm+4EcIcB54AF8SBHgkEPC8ywAaaYbQE6gblfX7SVSSLO78ICU8MY+P3SbXX72QZPg0EW7nzgtPC0lzk1aZMXFHf55Vd4fcRcswoqk8c0J4//5lHRorbp/vvv9dZAsEhpC6tWrfKi5UEEMw+uIDFw4ATHOggGAz08/PAj3mHQUzNxy+v1yT6m73AiiiOT+FZbaScW0m0B+iJgyg7rE1iHMEOQc8EUCNqFwTVuwBUm3gGSaRWRh2PEIz1OkGmbdmSYbUFZrF9gqg1rbUEBgx7WXzDF43eHLDpjDcUWxD6SJrxt7ZI8YbZy8WVu5U/nJL6VLLENnprTA/oEpgSxFokpLdx14Ukuv3YjP37m+abLRN/HtPytt6735annt+3zo402KgWLS+OjjXLVPTIy0QEIKqRjrhpXSnjeHQMgOjdOZLyL8NRTT3lZf/CDO72BAo9mSh50dJwMOCmCrkQhIG55aa9sMZePuvEyVjsB7UR7cVLr+sIx4RhPl0nAegAGbNzVgQn0Rh4slPoFLKaiXUmE733vVs+Z4RFTtA9twHbskdPTFNKjBjCAzWFnkRtGFvRDv5ByKIsnkDCg4UrbL0geOBz0KRkoZSsXBKIz1hHwVBfk42f2R6kHTyyBN7a2AMcjMpAO5ynHUqetXNg48JDzAW0U26xfP/4VDKSjjZjOkwcnnnrqv5q2NduB9iE/LmL8HC7aJ30/zjTZwZx8tNHJYjs+2jg6mu2fW8GYCPKyGKZ1JA6P3QUZOGwnxPsh+PX1BS/8hpUXNR+mKfB4Je5KsIgqAYONPJWCq0480YLpCz0PTg6/aQqRg23c8rqsuPt4/+Lmm7/tTS/oD1rgrgvOQwKmHWB3TEPA8SDgKS44Xj9nAnmQI08ZiawoWzh5PIqKT3VgMVgC5P/8508GTs1JXr+tvvAreVpdDCDfxRev9voJBno9wIncdZf/2+zykAP46MxFBvoZ9BWd4dDNNQu9P0q5VlvI0euD85T1DvMR8FaybOmYxtLPB7GNjA9wZPJ4/SOPPNQUAT1/+tMHvLKXXLJmwjtB4hT1vtgsWNKdrkaj0XChW70+lJhYOAB0HlvHwRUmOpq5iBb01Ij+jHucRspt+tKl5/uKwZvteNMfHS9qgC423W3yxFkGrSGEyWOTLXFxy4ucJLZh2oIrRlz9BTFBWyAL/cx87yOJdqKv4OVLrN3Ik3JJyBX92704EiZoQ7tlw7Yb0zry9JyrOsK2xcwnd+MYC9A2tDMp22BMwgXsG28cMqudcCz9Lc54FGYMmlCpo4NCOBJHuscWG9aIcZ0qOiaunIq+IBcbuGMBmL7BexB+DzY4rp7iUySgO5IkHwyA8wz7kVhMueLuJU5/CzsGuUbrZLEdH22s1bKd2nINLk359913j8IaCV6+hFPBgMeQPAG8hIYXAmVaI/kaKLHsBPCiJ8KVV/67VVVZy8M6FaZb7733zlL0NydrJJjKGR2tqyy//mu1YgaRSUxtYSoEVy2/+tWvvadm5BHYDNQpdZV49wHTHAzlJ4A1nQ0bxh9tT0rjpUuXeZ8h8pvKlnfEsFbVzkugSbXPlRwnU1sY9OBIkpwLdgUgjtwwt5UDAwPegnzZWcThyLIkQALRCIQZg6JJbq+Uk6mt9prA3CRAAiRAAkUmQEdSZOux7SRAAiSQAwJO1khyoBebQAIkQAKlJ8CPNpbAxK4+2lgCNFSBBEggBQKl/mhjpVJRQ0PHU8CYbRVhPto4xmLs3xpdtXbTpiddie5ouevWXdZSf7JviajjM4TpR1EhTZvWHbVoouWcTG1VKqepEyfa+4aSTStXJ2lShg1jRDiSEyfs38my6cw4EiABEghL4MiRw6qv75yw2Z3lc+JIpk+frt55x8mXV5yBaFcwvrq5fftutWrVvwQWFRbIjzsYFyEpx+iibX4y5SKhiG3XdSp6+3Vdktovi22T4uFKDsaUPXteKq8jwVV4f3/8F7vCnqRZdNxaLdy3xMCip+dUhfx9fbNd9SnKJQES6DACtdqf1ezZ+RhTnNyRwJ74Iu7779fVu++OltK8r78+qObP7w+l26JFiz/IV+67tFAwmIkESCARArXaW4lcsCfRGL5HEoEiPsx29Ojbas6caqjS+HMd+YOdUAWYiQRIgAQCCOC/kBCq1XBjUICoRJKcOhIsBMlnrhNpbU6E7NmzX5133nlqypT2/q+9Xu9S+DGQAAmQQFQCWBsZHDyo8F2vvASnjgRPE5x00slKvgeTF6XjtGP37pe9u4sof2aF/8TYvXtXnOpZlgRIoIMJwIk8//yLatas2bma5XDqSGDv5ctXqOHh4woDcNHDrl37VKPxXuQrgWXLliksvj/zzDaFDsFAAiRAAu0Q2LlztzrrrA8pjCV5Cs4dCQZOOBMMwHhcFusLRQsY9NH2rq6patmy8z1nEFUHsFiw4CMKHWJw8EhUMSxHAiTQYQTwXyZnn92XOycCMzj5jLyfffFJ9X379nnJZ555hurtPXXCp+bDToHpn2RHmZ0793oyP/5xeTpqcgvMMpNzTI5ZvHhMHp48w1+TJvniz/DwsNq/f68aGTnuOSY43EplqsJnV+R9Eyyo4T/hW4UilgmyWRH1CbJR2fSpVmc1/4wJ58XQ0MQ/sbPZtlUZGz+WwWL6LDVz5uy212NtPF3GOXv819bo/v5+hR8GUfzh04kTJ1SlMr2ZtdEI1xy/MkHl/co0K7fsyGI6tn194+20ZG07Ck9xrVixUtXrdTU0NOQxGRMCh9Lr7VYqOEHfCSG7uGXsH50rrj52Y5VLn+7u3mYfVWpY2W2oJsSHLaPzYxkw7M29E4HNUr0j0TtJkvsbN270xF199dVJiqUshwRoM4dwMxZN22ZsgAyqd75GkoFOrJIESIAESCBFAnQkKcJmVSRAAiRQRgJ0JGW0KnUiARIggRQJ0JGkCJtVkQAJkEAZCdCRlNGq1IkESIAEUiRAR5IibFZFAiRAAmUkQEdSRqtSJxIgARJIkQAdSYqwWRUJkAAJlJEAHUkZrUqdSIAESCBFAnQkKcJmVSRAAiRQRgJ0JGW0KnUiARIggRQJ0JGkCJtVkQAJkEAZCdCRlNGq1IkESIAEUiQQ7rvtKTaIVXUGAX6pubx2pm3La1s/zUrxGXk/5RhPAiRAAiTgngCnttwzZg0kQAIkUGoCdCSlNi+VIwESIAH3BOhI3DNmDSRAAiRQagKZL7Z3dXWpRqMxCbJfvGSUdGxtQZdp5kGaLc4mh3HxCYit2pFk2gdldZu2I4t5SYAE3BLI3JHIoC6DRLuDjlkeuIIGIT1Nr9Mt5s6RrvPVtbbF+/GXeNn62VSXz/30CcCmuo3CtCCoH4Qpzzz5JJC5I7Fhkc4mW+SRDqvHyT7SsK9vbXIZ556A2EmvSWyjx5n7Uk5saqbzOFsCfnaxxfvZUuJlC41s5bPVlLVHIZALRyIdC53Ktq8rFpSul9fLYN/WYW1xZjkeRyNgsjWPxY5B0s0yQXmZ5paAzV6wjy1eb4mk05Y6lfLtZ+5IpIPZOpykCXbJI8fYSh5Jk2OkSZxspRzySJy+L+ncxicgfMNK0u0mZXQZtnTJx216BEw7mMe6zfxaZZbxy8f44hDI3JGg40nHkk6IY4mXOBtSySdp5jHiRbbkka0eL/tBdUk5bsMREKZ+uU3WctyqnJ88xqdDQOwUtjabPXUZtvSwspkvPwQydyTtotA7HjqkfgxZciydVbaSph/7xbXbJua3ExDWsInsC3N7iYmxYsuJsTzKkkArm+h2RjvluFW5LHVi3fEJFMaRyGBkdkw5BgrJo2MxO7Dk0eNlX5ely+B+NALCFaX1fZs0W7puD1u6TQ7j3BMQu8Amso9aw9oobD73mrCGpAjkzpG02znNTqkfo5Pjp8s00+UE0E+IpOB2upywTMPm63SeedFfP4f0fVv7bOm6vW3pNjmMyzeBzB0JOhI6lnQovZPp+34Y9Twiyy8v49MhENcOccuno2Xn1qKfc0EUwuYLksG0YhDI3JEIJnQ6DCD4+QXJ45ceFG+Ta4sLksG01gTANOoAIvbQy0tc65qZwzWBOLZF2+KWd60f5UcnwM/IR2fHkiTQMQTiOAG5GPC7QNDjOwZoyRSlIymZQakOCZAACaRNgF//TZs46yMBEiCBkhGgIymZQakOCZAACaRNgI4kbeKsjwRIgARKRoCOpGQGpTokQAIkkDYBOpK0ibM+EiABEigZATqSkhmU6pAACZBA2gToSNImzvpIgARIoGQE6EhKZlCqQwIkQAJpE6AjSZs46yMBEiCBkhGgIymZQakOCZAACaRNgI4kbeKsjwRIgARKRoCOpGQGpTokQAIkkDYBOpK0ibM+EiABEigZATqSkhmU6pAACZBA2gToSNImzvpIgARIoGQE/h8yA1l7iqDxPwAAAABJRU5ErkJggg==" class=""></p>
+
+
+
+<h3 id="标签选择器">标签选择器</h3>
+
+<p>直接把标签名当做选择器来用 <br>
+语法：标签选择器{css属性名:css属性值;} <br>
+权重：1</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+</span></div><div class="hljs-line">    <span class="hljs-selector-tag">div</span>{
+</div><div class="hljs-line">       <span class="hljs-attribute">color</span>: red;<span class="hljs-comment">/*颜色*/</span>
+</div><div class="hljs-line">       <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;<span class="hljs-comment">/*字体大小*/</span>
+</div><div class="hljs-line">   }
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>标签选择器<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre>
+
+
+
+<h3 id="类选择器">类选择器</h3>
+
+<p>在标签后面加一个标签属性class，拿标签属性值来用，前面加”.” <br>
+语法：类选择器{css样式;} <br>
+权重：10</p>
+
+
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+</span></div><div class="hljs-line">    <span class="hljs-selector-tag">div</span>{<span class="hljs-attribute">color</span>:red;}
+</div><div class="hljs-line">    <span class="hljs-selector-class">.div2</span>{<span class="hljs-attribute">color</span>:blue;}
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>div1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"div2"</span>&gt;</span>div2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre></div></body></html>

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding:0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    font-size: 14px;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+.header{
+    width:1200px;
+    height: 84px;
+    margin:0 auto;
+    background-color: #f1f1f1;
+}
+.header .logo{
+    float: left;
+    width:176px;
+    height:52px;
+    margin-top: 12px;
+  
+}
+.header .logo img{
+    width:100%;
+}
+.header .nav{
+    float: left;
+    height: 84px;
+    /* background-color:yellow; */
+    margin-left: 50px;
+ 
+}
+.header .nav ul li{
+    padding-left:50px;
+    line-height: 84px;
+     float: left;
+}
+.header .nav ul li a:hover{
+    color: #2b7dd1;
+}
+.header .right{
+    line-height: 84px;
+    margin-right: 50px;
+    float: right;
+}
+.header .right-car {
+    position: relative;
+    display: inline-block;
+}
+.header .right-car span{
+    font-size:14px;
+   
+}
+.header .right-car i{
+    width: 24px;
+    height:22px;
+    margin-right: 12px;
+    vertical-align: middle;
+    background: url(../../image/icon.png) no-repeat;
+    display: inline-block;
+}
+.header .right-car:hover{
+ 
+    color:#2b7dd1;
+}
+.header .right-car:hover i{
+    background-position: -41px 0;
+}
+.header .right .right-carhidden{
+    position: absolute;
+    left:-145px;
+    top:62px;
+    width:400px;
+    height: 500px;
+    background:#ffffff;
+    display: none;
+}
+.header .right .right-carhidden h3{
+    font-weight: normal;
+}
+.header .right .right-car:hover .right-carhidden{
+    display: block;
+}
+
+.header .right a{
+    margin-left: 25px;
+}
+.footer{
+    height:274px;
+    background-color: #2e2e2e;
+}
+.footer .footer-min{
+    width:1200px;
+    margin: 0 auto;
+}
+.footer .footer-left dl{
+    float: left;
+    margin-top: 60px;
+    margin-right: 100px;
+}
+.footer .footer-left dt{
+    font-size: 18px;
+    color:#fefdfd;
+    padding-bottom:30px;
+}
+.footer .footer-left dd{
+    font-size: 14px;
+    color:#ebeaea;
+}
+.footer-right{
+    float: right;
+    margin-right: 40px;
+}
+.footer-right .footer-beijing{
+    width:210px;
+    height:65px;
+    margin-top: 70px;
+    background: url(../image/foot-icon.png) no-repeat;
+    background-position: 0 -90px;
+}
+.footer-right .footer-shouji li{
+    float: left;
+        cursor: pointer;
+    position: relative;
+    }
+.footer-right .footer-shouji li span{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background: url(../image/foot-icon.png) no-repeat;
+}
+.footer-right .footer-shouji .foot-hidden{
+    left: -70px;
+    top: -200px;
+    position: absolute;
+    display: none;
+}
+.footer-right .footer-shouji .foot-hidden i{
+    display: inline-block;
+    position: absolute;
+    left:80px;
+    top:189px;
+    width: 0;
+    border:10px solid ;
+    border-color: white transparent transparent;
+}
+.footer-right .footer-shouji .weibo{
+    background: url(../image/foot-icon.png) no-repeat;
+}
+.footer-right .footer-shouji .weixin{
+    background-position: -70px 0;
+}
+.footer-right .footer-shouji .apple{
+    background-position: -140px 0;
+}
+.footer-right .footer-shouji .anzhuo{
+    background-position: -225px 0;
+}
+.footer-right .footer-shouji li:hover .foot-hidden{
+    display: block;
+}

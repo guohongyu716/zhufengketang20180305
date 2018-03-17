@@ -1,0 +1,27 @@
+.box{
+    width: 800px;
+    height: 400px;
+    background-color: #f1f1f1;
+}
+.box h3{
+    height: 52px;
+    line-height: 52px;
+    background-color:#faa770 ;
+    color:#555;
+}
+.box h3 a{
+    color: green;
+    font-size: 12px;
+    font-weight: normal;
+
+}
+.box li{
+    font-size: 14px;
+    line-height: 30px;
+}
+.box li a{
+    color: darkblue;
+}
+.box li a span{
+    color:#1d9fd3 ;
+}

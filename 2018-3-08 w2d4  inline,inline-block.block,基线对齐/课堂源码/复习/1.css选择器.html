@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--标签选择器：1-->
+<style>
+    /*div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .div2{
+        background-color: #2a2a2a;
+    }*/
+
+</style>
+<!--<div></div>-->
+<!--<div class="div2"></div>-->
+
+<!--类选择器：10-->
+
+<!--id选择器：100-->
+<!--<style>
+    #div1{
+        width:200px;
+        height: 200px;
+        background-color: green;
+    }
+    .div1{
+        background-color: brown;
+    }
+</style>-->
+<!--<div id="div1" class="div1"></div>-->
+
+<!--通配符选择器：0<*<1-->
+<!--<style>
+    *{margin:0;padding:0;}
+    ul,ol{list-style: none;}
+</style>
+<h1>h1元素</h1>
+<p>p元素</p>
+<ul>
+    <li>1111</li>
+    <li>22222</li>
+</ul>
+<ol>
+    <li>11111</li>
+    <li>11111</li>
+</ol>-->
+
+<!--子级选择器：权重：所有组合选择器之和-->
+<!--
+<style>
+    /*a{}*/
+    ul>li>a{color: red;}/*3*/
+    ul a{}
+</style>
+<ul>
+    <li>
+        <a href="">1111</a>
+    </li>
+</ul>
+<ol>
+    <li>
+        <a href="">22222</a>
+    </li>
+</ol>
+-->
+
+
+<style>
+    .car span{/*11*/
+        color: red;
+    }
+    .car .span1{/*20*/
+        color: #2a2a2a;
+    }
+    .car>span{
+
+    }
+</style>
+
+<div class="car">
+    <span>我是span元素</span>
+    <div class="list">
+        <span class="span1">11111</span>
+        <span class="span2">22222</span>
+    </div>
+</div>
+
+<!--分组选择器:权重--独立计算的  -->
+<!--
+<style>
+    /*.div1{}
+    p{}
+    h1{}*/
+    .div1,p,h1{
+        width:100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<div class="div1">11111111111111</div>
+<p>ppppp</p>
+<h1>好好</h1>
+-->
+
+
+<!--交集选择器 组合选择器之和-->
+<!--<style>
+    div{}
+    .div4{}
+    [title]{}
+    [title=zf]{}
+
+    [class]{}
+    [class=div4]{}
+
+    div.div4{}
+
+    div[title]{}
+    div[title=zf]{}
+    .div4[title]{}
+
+</style>-->
+<!--<div class="div4" title="zf"></div>-->
+
+<style>
+    a{
+        color: green;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #0c27ff;
+        font-weight: bold;/*字体加粗*/
+    }
+    h1{
+        cursor: pointer;/*小手*/
+    }
+    h1:hover{
+        color: aqua;
+        font-weight: normal;
+    }
+</style>
+<!--伪类选择器-->
+<a href="">超链接</a>
+<h1>我是h1元素</h1>
+
+<!--伪元素-->
+<style>
+    ul:before{
+        display: block;
+        content: "0000000";
+        color: red;
+    }
+    ul:after{
+        display: block;
+        content: "44444";
+        color: red;
+    }
+</style>
+<ul>
+    <!--000000-->
+    <li>111111</li>
+    <li>222222</li>
+    <li>333333</li>
+    <!--444444-->
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*第一步：默认样式清除*/
+a{
+    text-decoration: none;/*去掉下滑线*/
+}
+
+/*第二步：写页面样式*/
+.list{
+    width:830px;/*宽度*/
+    height: 480px;/*高度*/
+    background-color: #f1f1f1;
+}
+.list h3{
+    height: 52px;
+    line-height: 52px;
+    background-color: #faa770;
+    color: #555;
+}
+.list h3 a{
+    color: green;
+    font-size: 12px;/*字体大小*/
+    font-weight: normal;/*去掉加粗*/
+    /*font-weight: bold;字体加粗*/
+}
+.list li{
+    font-size: 14px;
+    line-height: 30px;
+}
+.list li a{
+    color: #666;
+}
+.list li a span{
+    color: #1d9fd3;
+}
+
+
+

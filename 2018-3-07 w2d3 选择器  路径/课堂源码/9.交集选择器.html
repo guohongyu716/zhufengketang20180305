@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    /*div{}
+    .div1{}
+    [title]{}
+    [title=zf]{}
+    [class]{}
+    [class=div1]{}
+    #div2{}*/
+    /*div.div1{!*交集选择器  权重：11*!
+        color: red;
+    }*/
+    /*div#div2{}*/
+
+    div[title=zf]{
+        color: blueviolet;
+    }
+
+
+</style>
+
+<div class="div1" title="zf" id="div2">div元素</div>
+
+
+<style>
+    /*div{}
+    .box1{}
+    .box2{}*/
+   /* .box1.box2{
+        background-color: red;
+    }*/
+
+    .box1[title]{
+        background-color: red;
+    }
+</style>
+
+<div class="box1 box2" title="xx">2222</div>
+
+
+<style>
+    .list5{/*10*/
+
+    }
+    li.list5{/*11*/
+
+    }
+</style>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li class="list5"></li>
+</ul>
+
+
+
+
+
+
+
+
+</body>
+</html>

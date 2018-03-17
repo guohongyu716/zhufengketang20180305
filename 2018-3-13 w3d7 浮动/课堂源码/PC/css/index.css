@@ -1,0 +1,179 @@
+/*版心--公共的*/
+.main{
+    width:1204px;
+    margin:0 auto;
+    /*background-color: #f1f1f1;*/
+}
+.header{
+    height: 84px;
+}
+.header .logo{
+    float: left;
+    width:176px;
+    height: 52px;
+    margin-top:16px;
+    margin-right:85px;
+}
+.header .logo a{
+   display: block;
+}
+.header .logo img{
+    width:100%;
+}
+
+.header .nav{
+    float: left;
+}
+.header .nav li{
+    float: left;
+    height: 84px;
+    line-height: 84px;
+    margin-right:45px;
+}
+.header .nav li.noMargin{
+    margin-right:0;
+}
+.header .nav li a{
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.header .nav li a:hover{
+    color: #2b7dd1;
+}
+.header .login{
+    float: right;
+}
+.header .login .car{
+    position: relative;
+    float: left;
+    line-height: 84px;
+    margin-right:39px;
+}
+.header .login .car .icon-car{
+    font-size: 14px;
+    color: #666767;
+    cursor: pointer;
+}
+.header .login .car .icon-car i{
+    display: inline-block;
+    width:24px;
+    height: 22px;
+    background: url("../img/icon.png") no-repeat;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.header .login .car:hover .icon-car i{
+    background-position:-49px 0;
+}
+.header .login .car:hover .icon-car{
+    color: #2b7dd1;
+}
+.header .login .link{
+    line-height: 84px;
+    color: #666767;
+    font-size: 14px;
+    margin-right:33px;
+}
+.header .login .hidden-car{
+    position: absolute;
+    top:62px;
+    left:-151px;
+    display: none;
+    width:400px;
+    height: 400px;
+    background: red;
+}
+.header .login .car:hover .hidden-car{
+    display: block;
+
+}
+
+/*footer-top*/
+.footer-top{
+    width:100%;/*继承父级的宽度*/
+    background-color: #2e2e2e;
+    padding-top:47px;
+    padding-bottom: 58px;
+}
+.footer-top .foot-left{
+    float: left;
+}
+.footer-top .foot-left dl{
+    float: left;
+    color: #fff;
+    margin-right:70px;
+}
+.footer-top .foot-left dl dt{
+    font-size: 16px;
+    color: #fefdfd;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.footer-top .foot-left dl dd{
+    font-size: 14px;
+    color: #a3a3a3;
+    line-height: 30px;
+}
+.footer-top .foot-left dl.noMargin{
+    margin-right: 0;
+}
+.footer-top .foot-right{
+    float: right;
+    margin-right:40px;
+}
+.footer-top .foot-right h2{
+    width:200px;
+    height: 61px;
+    background: url("../img/icon-foot.png") no-repeat;
+    background-position: 0 -129px;
+}
+.footer-top .foot-right .list{
+    margin-top:18px;
+
+}
+.footer-top .foot-right li{
+    position: relative;
+    float: left;
+    width:46px;
+    height: 46px;
+    margin-right:15px;
+    cursor: pointer;
+}
+.footer-top .foot-right li:hover .foot-hidden{
+    display: block;
+}
+.footer-top .foot-right li.noMargin{
+    margin-right: 0;
+}
+.footer-top .foot-right li span{
+    display: inline-block;
+    width:46px;
+    height: 46px;
+    background: url("../img/icon-foot.png") no-repeat;
+}
+.footer-top .foot-right li span.weibo{
+    background-position: 0 -257px;
+}
+.footer-top .foot-right li span.weixin{
+    background-position: -85px -257px;
+}
+.footer-top .foot-right li span.iphone{
+    background-position: -171px -257px;
+}
+.footer-top .foot-right li span.anzhuo{
+    background-position: -258px -257px;
+}
+.footer-top .foot-right .foot-hidden{
+    display: none;
+    position: absolute;
+    left:-73px;
+    top:-203px;
+}
+.footer-top .foot-right .foot-hidden i{
+    position: absolute;
+    left:80px;
+    top:189px;
+    display: inline-block;
+    border:10px solid;
+    border-color: #fff transparent transparent;
+}

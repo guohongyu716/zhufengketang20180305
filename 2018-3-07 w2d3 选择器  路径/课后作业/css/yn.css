@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+a:hover{
+    font-weight:bold;
+}
+.box{
+    width: 1000px;
+    /*height:300px;*/
+    background-color: black;
+    margin: 0 auto;
+}
+dl{
+    margin-left: 50px;
+    color: white;
+    display: inline-block;
+}
+.box dt{
+    width: 190px;
+    line-width:190px;
+    }
+
