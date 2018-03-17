@@ -23,13 +23,20 @@ ul{
     margin: 17px 60px 17px 0;
 }
 .header .nav{
-    width:786px;
+    width:686px;
     height:52px;
     float: left;
+ 
 }
 .header .nav li{
-    
+    height:84px;
+    line-height: 84px;
     float: left;
+    padding-left:45px;
+    
+}
+.header .nav li:hover a{
+    color:#2b7dd1;
 }
 .header .nav li a{
     font-size: 14px;
@@ -37,4 +44,54 @@ ul{
 }
 .header .nav-right{
     float:right;
+    width:280px;
+    height:84px;
+}
+.nav-right .car{
+    display:inline-block;
+  position:relative;
+    height:84px;
+    line-height:84px;
+    margin:0 10px;
+}
+.nav-right .car span{
+    font-size:14px;
+    color: #2a2a2a;
+}
+.nav-right .car  i{
+    display:inline-block;
+    width:35px;
+    height:30px;
+    background:url(../image/icon.png) no-repeat; 
+    vertical-align: middle;
+}
+.nav-right .car:hover span{
+    color:#2b7dd1;
+}
+.nav-right .car:hover i{
+    background-position:-41px 0;
+}
+.nav-right .car .hidden-car{
+    /* display:none; */
+    position:absolute;
+    left:-150px;
+    top:95px;
+    width:300px;
+    height:300px;
+    padding:10px;
+    background-color:blue;
+}
+.nav-right .car:hover .hidden-car{
+    display:block;
+}
+.nav-right a{
+    font-size:14px;
+    margin-right:10px;
+}
+.nav-right .hidden-car h4{
+    font-size:14px;
+    font-family:normal;
+}
+.nav-right .hidden-cat span{
+    font-size:
 }
