@@ -559,7 +559,7 @@ ul {
     left: -70px;
     top: -200px;
     position: absolute;
-    display: none;
+    display: block;
     
 }
 .footer-right .foot-hidden i{
