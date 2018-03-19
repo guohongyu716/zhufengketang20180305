@@ -1,0 +1,32 @@
+.banner{
+    position: relative;
+    width:100%;
+}
+.banner .banImg{
+    width:100%;
+}
+.banImg .list1{
+    width:100%;
+    display: none;
+}
+.banImg .list1 img{
+    display: block;
+    width:100%;
+}
+.banImg .active{
+    display: block;
+}
+.banner .dot{
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.banner .dot ul{margin-left:-20px;}
+.banner .dot li{
+    float: left;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left:20px;
+}
