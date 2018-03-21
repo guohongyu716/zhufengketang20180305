@@ -511,23 +511,36 @@ text-align: center;
   vertical-align: middle;
   margin-right: 10px;
 }
+
 .footer_bop p{
   font-size:12px;
   color: #5a5a55;
   text-align: center;
 }
+.footer_bop .record{
+  width:747px;
+  height:55px;
+  padding: 38px 0 0 221px;
+
+}
+.footer_bop .record li{
+    margin-left:30px;
+}
 .footer_bop .record .xinyong{
-  width:139px;
+  float:left;
+    width:139px;
   height:49px;
   background: url(../image/fonter.png) no-repeat 0 -234px;
 }
 .footer_bop .record .pay{
-  width:152px;
+    float:left;
+    width:152px;
   height:49px;
   background: url(../image/fonter.png) no-repeat -261px -234px;
 }
 .footer_bop .record .cockade{
-  width:55px;
+    float:left;
+    width:55px;
   height:55px;
   background: url(../image/fonter.png) no-repeat -520px -234px;
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    *{margin:0;}
+    .header{
+        width:100%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: #fff;
+        background-color: pink;
+    }
+    @media screen and (max-width:375px){
+        /*
+        min-width:375px 最小宽度是375px  大于等于375px
+        max-width:375px 最大宽度是375px  小于等于375px
+        */
+        .header{
+            background-color: green;
+            font-size: 30px;
+        }
+    }
+    @media screen and (min-width:414px){
+
+    }
+
+
+
+
+   /* @media screen and (width:414px){
+        .header{
+            background-color: red;
+            font-size: 50px;
+            color: yellow;
+        }
+
+    }*/
+</style>
+
+<div class="header">我是头部</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

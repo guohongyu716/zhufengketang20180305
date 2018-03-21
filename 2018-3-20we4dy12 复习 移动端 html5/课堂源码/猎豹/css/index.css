@@ -1,0 +1,170 @@
+*{margin:0;padding:0;}
+ul{list-style: none}
+a{text-decoration: none;}
+.clearfix:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.clearfix{
+    *zoom:1;
+}
+
+.container{
+    position: relative;
+    width:100%;
+}
+header{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 90px;
+    background-color: rgba(0,0,0,.2);
+    z-index:1;
+}
+.main{
+    width:960px;
+    margin:0 auto;
+}
+header h1{
+    float: left;
+    width:270px;
+    height: 51px;
+    margin-top:18px;
+}
+header h1 img{
+    width:100%;
+}
+header nav{
+    float: right;
+    line-height: 90px;
+}
+header nav a{
+    color: #fff;
+    font-size: 18px;
+    padding:0 30px;
+}
+.banner{
+    height: 580px;
+    position: relative;
+}
+
+.banner li{
+    float: left;
+    width:100%;
+    height: 580px;
+    text-align: center;
+    display: none;
+}
+.banner li.bg{
+    background-color: #22206a;
+    display: block;
+}
+.banner li.bgColor{
+    display: block;
+    background-color: #fd6a28;
+}
+.banner li a{
+    display: block;
+}
+.banner li img{
+    margin:0 auto;
+    display: block;
+    height: 580px;
+}
+.banner .prev{
+    position: absolute;
+    left:80px;
+    top:260px;
+}
+.banner .next{
+    position: absolute;
+    right:80px;
+    top:260px;
+}
+.content{
+    padding:40px 0;
+}
+.content li{
+    float: left;
+    width:25%;
+    text-align: center;
+}
+.content li h3{
+    font-size: 18px;
+    color: #ff6900;
+    font-weight: normal;
+}
+.content li a{
+    display: block;
+}
+.content li img{
+    margin:0 auto;
+    display: block;
+}
+.content li p{
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    font-size: 12px;
+}
+
+
+
+
+@media screen and (max-width:760px){
+    header{
+        height: 46px;
+    }
+    .main{
+        width:100%;
+    }
+    header h1{
+        width:148px;
+        height: 28px;
+        margin-top:3px;
+    }
+    nav{
+        display: none;
+    }
+    .banner{
+        height: 260px;
+    }
+    .banner li{
+        height: 260px;
+    }
+    .banner li img{
+        width:100%;
+        height: 260px;
+    }
+    .banner .prev,.banner .next{
+        display: none;
+    }
+    .content{
+        padding:0;
+    }
+    .content li{
+        margin-top:10px;
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

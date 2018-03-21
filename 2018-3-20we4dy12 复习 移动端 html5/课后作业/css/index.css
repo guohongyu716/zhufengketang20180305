@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding:0;
+}
+ul{
+    list-style: none;;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: 960px;
+    margin: 0 auto;
+}
+.clearfix:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.conter{
+    position: relative;
+    width:100%;
+}
+header{
+    width: 100%;
+    height:90px;
+    position: absolute;
+    top:0;
+    left:0;
+    line-height: 90px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.main h1{
+    float: left;
+    width: 270px;
+    height: 51px;
+    margin-top: 18px;
+}
+.main h1 img{
+    width:100%;
+    height:100%
+}
+.main nav{
+    float: right;
+    line-height: 90px;
+
+}
+.main nav a{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+   padding: 0 30px;
+}
+.main nav a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.banner {
+    position: relative;
+    /* height: 580px;    */
+    overflow: hidden;
+    
+}
+.banner .banner_img li{
+    float:left;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .banner_img .bf{
+    display: none;
+}
+.banner .banner_img li.bg{
+  
+    background-color: #242561;
+}
+.banner .banner_img li.bf{
+    background-color:#fe6800;
+}
+.banner .af{
+    display: inline-block;
+    height:44px;
+    width:44px;
+    position: absolute;
+    top:270px;;
+    left:107px;
+}
+.banner .af img{
+    width:100%;
+    height:100%;
+}
+.banner .ar{
+    display: inline-block;
+    height:44px;
+    width:44px;
+    position: absolute;
+    top:270px;;
+    right:107px;
+}
+.banner .ar img{
+    width:100%;
+    height:100%;
+}
+.box li{
+    float:left;
+    width: 25%;
+    text-align: center;
+}
+.box li h4{
+    font-size: 16px;
+    color:#fe6800;
+    margin: 5px;
+    font-weight: normal;
+}
+.box li p{
+    height:30px;
+    color:#333;
+    font-size: 12px;
+}
+
+@media screen and (max-width:760px){
+header{
+    height: 46px;
+    line-height: 46px;
+}
+.main h1 {
+    width:148px;
+    height:28px;
+    margin-top:2px;
+}   
+nav{
+     display: none;
+    }
+.main{
+    width:100%;
+    }
+
+.banner .banner_img li img{
+     display:block;
+     width: 100%;
+    }
+
+.banner .af{
+    display: none;
+}
+.banner .ar{
+    display: none;
+}
+.box li{
+    width: 50%;
+}
+}
+

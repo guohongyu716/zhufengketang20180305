@@ -475,3 +475,14 @@ ul {
 }
 
 /* 页尾相关样式 end*/
+
+
+
+/* 右侧固定导航 */
+.fixation{
+  position: fixed;
+  width:65px;
+  height:65px;
+  right:0;
+  top:80px;
+}

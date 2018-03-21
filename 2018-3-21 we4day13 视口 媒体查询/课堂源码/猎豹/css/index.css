@@ -1,0 +1,97 @@
+.container{
+    position: relative;
+    width:100%;
+}
+header{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 90px;
+    background-color: rgba(0,0,0,.2);
+    z-index:1;
+}
+.main{
+    width:960px;
+    margin:0 auto;
+}
+header h1{
+    float: left;
+    width:270px;
+    height: 51px;
+    margin-top:18px;
+}
+header h1 img{
+    width:100%;
+    display: block;
+}
+header nav{
+    float: right;
+    line-height: 90px;
+}
+header nav a{
+    font-size: 14px;
+    color: #fff;
+    padding:0 20px;
+}
+.banner{
+    position: relative;
+    width:100%;
+    height: 580px;
+}
+.banner .banImg{
+    width:100%;
+}
+.banner .banImg li{
+    display: none;
+    width:100%;
+    text-align: center;
+}
+.banner .banImg li.bg1{
+    display: block;
+    background-color: #fd6a28;
+}
+
+.banner .banImg li.bg2{
+    display: block;
+    background-color: #22206a;
+}
+.banner .l-btn{
+    position: absolute;
+    left:100px;
+    top:300px;
+}
+
+.banner .r-btn{
+    position: absolute;
+    right:100px;
+    top:300px;
+}
+.content{
+    margin-bottom: 50px;
+}
+.content li{
+    float: left;
+    width:25%;
+    text-align: center;
+}
+.content li h5{
+    font-size: 18px;
+    color: #ff6900;
+    font-weight: normal;
+}
+.content li p{
+    line-height: 35px;
+    color: #333;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
