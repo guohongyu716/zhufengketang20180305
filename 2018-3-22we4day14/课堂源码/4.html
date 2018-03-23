@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+
+<style>
+    /*rem = html的font-size值
+    */
+    *{margin:0;}
+    html{
+        font-size: 100px;/*1rem=100px*/
+    }
+    div{
+        width:100%;
+        height:1.5rem;
+        line-height: 1.5rem;
+        font-size: .3rem;
+        text-align: center;
+        color: #fff;
+        background-color:pink;
+    }
+    footer{
+        width:100%;
+        height: 1rem;
+        background-color: blue;
+        font-size: .6rem;
+    }
+
+    @media screen and (min-width:375px){
+        html{
+            font-size:117.1875px;
+        }
+    }
+    @media screen and (min-width:414px){
+        html{
+            font-size:129.375px;
+        }
+    }
+    /*
+    移动端适配机型：iphone 5/5s/6/6s/6Plus 320  375  414
+    尺寸320  font-size:100px
+    尺寸375  font-size:117.1875px
+    尺寸414  font-size:129.375
+    */
+
+
+</style>
+<div>我是div元素</div>
+<footer>我是尾部</footer>
+
+
+<!--/
+img 30*30*2  60*60
+
+-->
+
+
+
+</body>
+</html>

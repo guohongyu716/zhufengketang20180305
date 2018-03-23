@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    /*
+    REM = root element 根元素
+    REM是为了获取根元素(HTML)的font-size值的
+    */
+
+    *{margin:0;}
+    html{
+        font-size: 100px;/*1rem=100px*/
+        /*font-size:16px;!*谷歌浏览器默认字体大小值是16px*!*/
+        /*1rem=16px*/
+    }
+    .header{
+        width:100%;
+        height: 1rem;
+        background-color: red;
+        font-size:.3rem;
+    }
+    .footer{
+        width:100%;
+        height: 2rem;/*1rem=100px;*/
+        background-color: blue;
+    }
+    @media screen and (min-width:375px){
+        html{
+            font-size:117.1875px;
+        }
+    }
+    @media screen and (min-width:414px){
+        html{
+           font-size:129.375px;
+        }
+    }
+    /*
+    320 font-size:100px
+    375  font-size:117.1875px
+    414  font-size:129.375px
+
+    */
+
+</style>
+
+<div class="header">桌子</div>
+<div class="footer">尾部</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

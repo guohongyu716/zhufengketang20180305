@@ -1,0 +1,43 @@
+/*iphone5/5s 640 320*2*/
+html{
+    font-size: 50px;
+}
+
+nav{
+
+}
+nav li{
+    float: left;
+    width:20%;
+    margin-top:.2rem;
+    text-align: center;
+}
+nav li img{
+    margin:0 auto;/*让盒子正在水平位置居中*/
+    display: block;
+    width:.6rem;
+    height: .6rem;
+}
+nav li p{
+    font-size: .12rem;
+    line-height: .6rem;
+}
+
+
+@media screen and (min-width:375px){
+    html{
+        font-size:58.59375px;
+    }
+}
+@media screen and (min-width:414px){
+    html{
+        font-size:64.6875px;
+    }
+}
+@media screen and (min-width:640px){
+    html{
+        font-size:100px;
+    }
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+    }
+    /*414*/
+    html {
+        font-size: 100px; /*1rem=100px */
+    }
+
+    .header {
+        width: 100%;
+        height: 3rem;
+        background-color: #2a2a2a;
+    }
+
+    .header .logo {
+        float: left;
+        margin-top: .3rem;
+    }
+    .header .logo img{
+        display: block;
+    }
+
+    @media screen and (min-width: 375px) {
+        html {
+            font-size: 117.1875px;
+        }
+    }
+    @media screen and (min-width:414px){
+        html{
+            font-size: 129.375px;
+        }
+    }
+
+    /*
+    320 font-size:100px
+    375  ?
+    414  129.375
+    */
+    /*
+    375  font-size:100px;
+    320    85.33
+    414   110.4
+    640   170.66
+
+    */
+
+    /*
+    414  100px
+    375  ?
+    320   ?
+
+    */
+
+
+
+
+</style>
+<div class="header">
+    <div class="logo">
+        <a href="">
+            <img src="logo.png" alt="">
+        </a>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><title>CSS3属性</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style>
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><a href="#css3属性">CSS3属性</a><ul>
+<li><a href="#css3属性前缀和标准写法顺序是什么">CSS3属性前缀和标准写法顺序是什么？</a></li>
+<li><a href="#border-radius-圆角">border-radius 圆角</a></li>
+<li><a href="#box-shadow-盒子阴影">box-shadow 盒子阴影</a></li>
+<li><a href="#text-shadow-文本阴影">text-shadow 文本阴影</a></li>
+<li><a href="#box-sizing-怪异盒模型">box-sizing 怪异盒模型</a></li>
+<li><a href="#linear-gradient线性渐变">linear-gradient线性渐变</a></li>
+</ul>
+</li>
+<li><a href="#面试题">面试题</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<h2 id="css3属性">CSS3属性</h2>
+
+<h3 id="css3属性前缀和标准写法顺序是什么">CSS3属性前缀和标准写法顺序是什么？</h3>
+
+<ul><li>-webkit-border-radius: 50%; 谷歌浏览器</li>
+<li>-moz-border-radius: 50%; 火狐浏览器</li>
+<li>-o-border-radius: 50%; 欧朋浏览器</li>
+<li>-ms-border-radius: 50%; IE浏览器</li>
+<li>border-radius: 50%; 标准写法</li>
+</ul>
+
+<blockquote>
+  <p>在做移动端项目时，一般css3属性的样式至少写两套，如下所示： <br>
+  -webkit-border-radius: 50%; <br>
+  border-radius: 50%; </p>
+</blockquote>
+
+<h3 id="border-radius-圆角">border-radius 圆角</h3>
+
+<p>border-radius:(顺时针方向) <br>
+四个值:左上 右上 右下 左下  <br>
+三个值:左上 右上/左下 右下  <br>
+两个值:左上/右下 右上/左下  <br>
+1个值:左上 右上 右下 左下  <br>
+圆角：项目中的应用(焦点图/banner/轮播图 小圆点(分页器))  <br>
+半圆：圆角值为半径大小</p>
+
+
+
+<h3 id="box-shadow-盒子阴影">box-shadow 盒子阴影</h3>
+
+<p>none:无阴影  <br>
+<code>&lt;length&gt;</code>：必需。水平阴影的位置。允许负值。  <br>
+<code>&lt;length&gt;</code>：必需。垂直阴影的位置。允许负值。  <br>
+<code>&lt;length&gt;</code>：可选。模糊距离。不允许负值  <br>
+<code>&lt;length&gt;</code>：可选。阴影的尺寸。允许负值  <br>
+<code>&lt;color&gt;</code>：设置阴影的颜色。  <br>
+inset:设置对象的阴影类型为内阴影。该值为空时，则对象的阴影类型为外阴影</p>
+
+
+
+<h3 id="text-shadow-文本阴影">text-shadow 文本阴影</h3>
+
+<p>none:无阴影 </p>
+
+<ul><li><code>&lt;length&gt;</code>：水平阴影的位置。允许负值。 </li>
+<li><code>&lt;length&gt;</code>：垂直阴影的位置。允许负值。 </li>
+<li><code>&lt;length&gt;</code>：模糊的距离。 </li>
+<li><code>&lt;color&gt;</code>：阴影的颜色</li>
+</ul>
+
+<h3 id="box-sizing-怪异盒模型">box-sizing 怪异盒模型</h3>
+
+<ul><li>border-box 包含border和padding的值</li>
+<li>content-box 不包含border和padding的值</li>
+</ul>
+
+<blockquote>
+  <p>一般常用border-box这个属性值 <br>
+  常用在做移动端设置宽的时候</p>
+</blockquote>
+
+
+
+<h3 id="linear-gradient线性渐变">linear-gradient线性渐变</h3>
+
+<p>background: -webkit-linear-gradient(bottom,red,yellow);渐变方向,颜色值,颜色值,颜色值;</p>
+
+<p>第一个值：取值 <br>
+下述值用来表示渐变的方向，可以使用角度或者关键字来设置： <br>
+<code>&lt;angle&gt;</code>：用角度值指定渐变的方向（或角度）。 <br>
+left 设置渐变为从左到右 <br>
+top 设置渐变为从上到下 <br>
+right 设置渐变为从右到左 <br>
+bottom 设置渐变为从下到上</p>
+
+<p>第二个值：<code>&lt;color-stop&gt;</code> 用于指定渐变的起止颜色 <br>
+<code>&lt;color&gt;</code>：指定颜色。 <br>
+<code>&lt;length&gt;</code>：用长度值指定起止色位置。不允许负值 <br>
+<code>&lt;percentage&gt;</code>：用百分比指定起止色位置。</p>
+
+<h2 id="面试题">面试题</h2>
+
+<p>让一个元素另一个元素水平垂直方向居中显示</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs stylus"><div class="hljs-line"><span class="hljs-number">1</span>.第一种方法
+</div><div class="hljs-line">  <span class="hljs-number">1</span>) 设置绝对定位属性
+</div><div class="hljs-line">  <span class="hljs-number">2</span>) 设置绝对定位属性的<span class="hljs-attribute">left</span>/top的值为<span class="hljs-number">50%</span>
+</div><div class="hljs-line">  <span class="hljs-number">3</span>) 设置元素-<span class="hljs-attribute">margin-top</span>/<span class="hljs-number">2</span>(高度的一半)-margin-left/<span class="hljs-number">2</span>(宽度的一半)
+</div><div class="hljs-line">.div1{
+</div><div class="hljs-line">     <span class="hljs-attribute">position</span>: absolute;
+</div><div class="hljs-line">     <span class="hljs-attribute">left</span>:<span class="hljs-number">50%</span>;
+</div><div class="hljs-line">     <span class="hljs-attribute">top</span>:<span class="hljs-number">50%</span>;
+</div><div class="hljs-line">     <span class="hljs-attribute">margin-top</span>:-<span class="hljs-number">100px</span>;
+</div><div class="hljs-line">     <span class="hljs-attribute">margin-left</span>:-<span class="hljs-number">100px</span>;
+</div><div class="hljs-line">     <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;
+</div><div class="hljs-line">     <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+</div><div class="hljs-line">     <span class="hljs-attribute">background</span>: yellow;
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><span class="hljs-number">1</span>.第二种方法
+</div><div class="hljs-line">   <span class="hljs-number">1</span>) 给元素设置绝对定位属性
+</div><div class="hljs-line">   <span class="hljs-number">2</span>) 给元素设置绝对定位属性的四个方向<span class="hljs-attribute">left</span>、top、right、bottom的值为<span class="hljs-number">0</span>
+</div><div class="hljs-line">   <span class="hljs-number">3</span>) 给元素设置<span class="hljs-attribute">margin</span>:auto;这个css属性
+</div><div class="hljs-line">.div2{
+</div><div class="hljs-line">    <span class="hljs-attribute">position</span>: absolute;
+</div><div class="hljs-line">    <span class="hljs-attribute">left</span>:<span class="hljs-number">0</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">top</span>:<span class="hljs-number">0</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">bottom</span>:<span class="hljs-number">0</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">right</span>:<span class="hljs-number">0</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">margin</span>:auto;
+</div><div class="hljs-line">    <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">background</span>: blue;
+</div><div class="hljs-line">}
+</div></code></pre></div></body></html>

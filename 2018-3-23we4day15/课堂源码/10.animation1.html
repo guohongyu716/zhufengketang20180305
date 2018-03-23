@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    .div1{
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin:-50px 0 0 -50px;
+        width:100px;
+        height: 100px;
+        background-color:red;
+        -webkit-animation:div1 3s infinite;
+        animation:div1 3s infinite;
+    }
+
+    @-webkit-keyframes div1 {
+        /*0%{}
+        100%{}*/
+        from{
+            -webkit-transform:rotate(0deg);
+            transform:rotate(0deg);
+        }
+        to{
+            -webkit-transform:rotate(3000deg);
+            transform:rotate(3000deg);
+        }
+    }
+    @keyframes div1 {
+        /*0%{}
+        100%{}*/
+        from{
+            -webkit-transform:rotate(0deg);
+            transform:rotate(0deg);
+        }
+        to{
+            -webkit-transform:rotate(3000deg);
+            transform:rotate(3000deg);
+        }
+    }
+    
+</style>
+<div class="div1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

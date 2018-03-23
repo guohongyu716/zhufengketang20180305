@@ -1,0 +1,197 @@
+html{
+    font-size: 50px;
+}
+header{
+    width:100%;
+    height: 1.12rem;
+    background-color: #2a2a2a;
+}
+header .logo{
+    float: left;
+    width:2.1rem;
+    height: .62rem;
+    margin:.23rem 0 0 .16rem;
+}
+header .logo img{
+    display: block;
+    width:100%;
+}
+header .line{
+    float: right;
+    margin:.4rem .23rem 0 0;
+}
+header .line span{
+    display: block;
+    width:.36rem;
+    height: .07rem;
+    background-color: #fff;
+    border-radius: .05rem;
+    margin-bottom: .06rem;
+}
+header .line span:nth-child(3){
+    margin-bottom: 0;
+}
+/*banner*/
+.banner{
+    position: relative;
+    width:100%;
+}
+.banner .banImg{
+    width:100%;
+}
+.banner .banImg .list{
+    width:100%;
+    display: none;
+}
+.banner .banImg .active{
+    display: block;
+}
+.banner .banImg .list img{
+    width:100%;
+    display: block;
+}
+.banner .dot{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: .15rem;
+    margin:auto;
+    width:.85rem;
+    height:.16rem;
+}
+.banner .dot li{
+    float: left;
+    width:.16rem;
+    height: .16rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right:.07rem;
+}
+.banner .dot li:nth-child(4){
+    margin-right:0;
+}
+
+/*allCourse*/
+.allCourse{
+    padding:0 .18rem;
+    background-color: #f8f8f8;
+}
+.allCourse h3{
+    font-size: .26rem;
+    color: #4c4b4b;
+    font-weight: normal;
+    line-height: .99rem;
+}
+.allCourse h3 i{
+    display: inline-block;
+    width:.29rem;
+    height: .35rem;
+    background: url("../img/icon.png") no-repeat;
+    background-size:1.89rem 1.38rem;
+    vertical-align: middle;
+    margin-right:.13rem;
+}
+.allCourse .course{
+    width:100%;
+    margin-bottom: .36rem;
+    border-radius:.15rem;
+    box-shadow: .01rem .01rem .06rem rgba(178,178,178,.75),-.01rem .01rem .06rem rgba(178,178,178,.75);
+}
+.allCourse .course a{
+    display: block;
+}
+.allCourse .course .courseImg{
+    width:100%;
+}
+.allCourse .course .courseImg img{
+    width:100%;
+    border-radius:.15rem .15rem 0 0;
+}
+.allCourse .course .courseInfo{
+    width:100%;
+    background-color: #fff;
+    text-align: center;
+    padding:.32rem 0 .35rem 0;
+    border-radius: 0 0 .15rem .15rem;
+
+
+}
+.allCourse .course .courseInfo p{
+    font-size: .28rem;
+    color: #777;
+    margin-bottom: .25rem;
+}
+.allCourse .course .courseInfo h5{
+    font-weight: normal;
+    color: #ed3a3a;
+    font-size: .28rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px){
+    html{
+        font-size: 58.59375px;
+    }
+}
+@media screen and (min-width:414px){
+    html{
+        font-size: 64.6875px;
+    }
+}
+@media screen and (min-width:640px){
+    html{
+        font-size: 100px;
+    }
+}
