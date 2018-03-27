@@ -119,8 +119,9 @@ header{
     font-size: 12px;
 }
 .bot{
-    widows: 100%;
+    width: 100%;
     height:433px;
+    padding-top:20px;
     background-color:  #f3f5f8;
 }
 .bot h4 {
@@ -128,23 +129,102 @@ header{
     font-size: 18px;
     font-weight: normal;
     color: #fe6800;
-    border-left:5px solid #fe6800;
-    
+    border-left:5px solid;
+    padding-left: 21px;
 }
-.bot h4 chanpin{
+.bot h4 span{
     float: left;
     padding-left:15px;
-
 }
-.bot h4 .mach{
+.bot h4 a{
     float: right; 
     font-size: 14px;
+    color:#606060;
+}
+.bot .bottom{
+    margin-top:20px;
+    height: 400px;
+}
+.bot .bottom li{
+    width: 100%;
+    height:100px;
+    margin-top: 15px;
+}
+.bot .bottom a{
+    float:left;
+    width: 152px;
+    height:81px;
+}
+.bot .bottom a img{
+    width: 100%;
+}
+.bot .bottom .bottom_rt{
+    float:right;
+    width:80%;
+}
+.bot .bottom .bottom_rt h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.bot .bottom .bottom_rt p{
+    font-size: 12px;
+    color: #606060;
+    line-height: 22px;
 }
 
 
+/*尾部样式footer*/
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: #474746;
+}
+.foot{
+  height:150px;
+text-align: center;
 
+}
+.foot .foot_top{
+    display:inline-block;
+    height:40px;
+}
+.foot .foot_top a{
+    float:left;
+    width:40px;
+    height:40px;
+    padding-left: 16px;
 
+}
+.foot .foot_top .foot_top_si{
+    background: url("../image/foot.png") no-repeat;
+}
+.foot .foot_top .foot_top_qq{
+    background: url("../image/foot.png") no-repeat -63px 0;
+}
+.foot .foot_top .foot_top_kj{
+    background: url("../image/foot.png") no-repeat -126px 0;
+}
+.foot .foot_nav{
+  display: block;
+    margin: 15px auto;
+}
+.foot  .foot_nav a{
+    display: inline-block;
+    font-size: 12px;
 
+    color: #c4c1bb;
+    padding: 0 10px;
+    border-right:1px solid;
+}
+.foot  .foot_nav a:hover{
+    color: #FFF;
+}
+.foot p{
+    font-size: 12px;
+    color: #6d6d6d;
+    line-height: 22px;
+}
 
 
 @media screen and (max-width:760px){
