@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+    .tabBox{
+        margin: 20px auto;
+        width: 500px;
+        /* background-color: aquamarine; */
+    }
+    
+    .tabBox ul{
+        position: relative;
+        top:1px;
+    }
+    .tabBox ul li{
+        display: inline-block;
+        padding: 0 5px;
+        margin-right: 10px;
+        line-height: 33px;
+        border: 1px solid #AAA;
+        cursor: pointer;
+    }
+    .tabBox ul li.active{
+        color:red;
+        font-weight: bold;
+        border-bottom-color:#FFF;
+    }
+
+    
+    .tabBox div{
+        display: none;
+        line-height: 148px;
+        border: 1px solid #AAA;
+        text-align: center;
+
+    }
+
+    .tabBox div.active{
+        display: block;
+    }
+   
+
+
+    </style>
+</head>
+<body>
+    <!--  -->
+    <div class="tabBox" id="tabBox">
+        <ul>
+            <li class="active">新闻</li>
+            <li>电影</li>
+            <li>音乐</li>
+        </ul>
+        <div class="active">金三胖来华</div>
+        <div>复仇者三</div>
+        <div>没时间听</div>
+
+    </div>
+    <script scr="./js/ka.js"></script>
+</body>
+</html>
