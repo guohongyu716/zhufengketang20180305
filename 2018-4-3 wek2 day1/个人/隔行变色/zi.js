@@ -1,4 +1,4 @@
-var oBox = document.getElementById("box"),
+var oBox = document.getElementById("box");
     itemList = oBox.getElementsByTagName("li");
 
 for (var i =0; i < itemList.length; i++) {
