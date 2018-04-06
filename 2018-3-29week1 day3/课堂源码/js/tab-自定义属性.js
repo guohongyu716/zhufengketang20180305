@@ -52,7 +52,11 @@ for (var i = 0; i < tabList.length; i++) {
 }*/
 /*i=0 第一次循环
 tabList[0].onclick=function () {
+<<<<<<< HEAD
   "changeTab(i);"//=>绑定事件时函数没有被执行呢,此时函数体中储存的都是'字符串' 我们看到只是一个字符不是变量
+=======
+  "changeTab(i);"
+>>>>>>> da3a10d79f9a30ad3886456d723100e01304791f
 };
 i++
 i=1 第二次循环

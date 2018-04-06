@@ -7,6 +7,7 @@
 
 */
 var tabBox=document.getElementById('tobBox')
+<<<<<<< HEAD
      tabList = tabBox.getElementsByTagName('li')
     divList = tabBox.getElementsByTagName('div')
 
@@ -21,10 +22,27 @@ var tabBox=document.getElementById('tobBox')
 // }
 //=>封装一个方法完成页卡切换
 function changeTab(curIndex){
+=======
+var tabList = tabBox.getElementsByTagName('li')
+var tabList = tabBox.getElementsByTagName('div')
+
+for (var i = 0; i < tabList.length; i++){
+
+tabList[i].onclick =function(){
+
+
+}
+
+
+}
+//=>封装一个方法完成页卡切换
+function changeTab(){
+>>>>>>> da3a10d79f9a30ad3886456d723100e01304791f
 
 //=>1.所有都没有选中样式
 
 for (var i = 0; i < tabList.length; i++){
+<<<<<<< HEAD
     tabList[i].className = '';
     divList[i].className = '';
 }
@@ -32,6 +50,12 @@ for (var i = 0; i < tabList.length; i++){
 //=>tabList
 tabList[curIndex].className = 'active';
 divList[curIndex].className = 'active';
+=======
+    tabList[i].className = ''
+    divList[i].className = ''
+}
+
+>>>>>>> da3a10d79f9a30ad3886456d723100e01304791f
 }
 
 
