@@ -1,12 +1,6 @@
 //=>1.获取box中的所有li.(我们首先要获取box.)
-<<<<<<< HEAD
 var oBox = document.getElementById('box');
     boxList = oBox.getElementsByTagName('li')
-=======
-console.log( document)
-
-var oBox = document.getElementById('box');
->>>>>>> da3a10d79f9a30ad3886456d723100e01304791f
 
 //=> 修改box的样式
 //1.通过STYLE修改行内样式
@@ -15,7 +9,6 @@ oBox.style.backgroundColor = 'pink';
 //2.基于CLASS-NAME属性修改BOX的样式类,从而改变样式
 //oBox['className'] = 'box bgColor';
 oBox['className'] += ' bgColor';
-<<<<<<< HEAD
 
 for (var i = 0; i < boxList.length; i++){
 //boxList[i]
@@ -26,5 +19,3 @@ for (var i = 0; i < boxList.length; i++){
 boxList[i].style.backgroundColor = i % 2 !== 0 ? 'red' : ''; 
 //=> 会把三元运算符的结果给等号左边的内容
 }
-=======
->>>>>>> da3a10d79f9a30ad3886456d723100e01304791f

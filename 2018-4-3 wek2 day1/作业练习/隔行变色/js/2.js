@@ -2,7 +2,7 @@ var oBox = document.getElementById("box");
 itemList = oBox.getElementsByTagName("li");
 
 for (i = 0; i < itemList.length; i++) {
-  itemList[i].className = "bg" + i % 3;
+  itemList[i].className = "bg" + i % 2;
 
   itemList[i].onmouseover = function() {
     this.className += " hover";
