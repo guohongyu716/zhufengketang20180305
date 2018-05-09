@@ -1,0 +1,196 @@
+<!DOCTYPE html><html><head><title>2018年第二期第一周考试题（补考1）</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style>.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
+
+
+</style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h3 id="2018年第二期第一周考试题补考1">2018年第二期第一周考试题（补考1）</h3>
+
+<p></p>
+
+<p>1.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">var</span> a = <span class="hljs-number">0</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    alert(a);
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>}
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>fun();
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>alert(a);
+</div></code></pre>
+
+<p>2.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">let</span> a = <span class="hljs-number">0</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    b = <span class="hljs-number">0</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">A</span>(<span class="hljs-params">a</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    A = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">b</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>        alert(a + b++);
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    };
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>    alert(a++);
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>}
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span>A(<span class="hljs-number">1</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span>A(<span class="hljs-number">2</span>);
+</div></code></pre>
+
+<p>3.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-built_in">window</span>.val = <span class="hljs-number">1</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-keyword">let</span> json = {
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-attr">val</span>: <span class="hljs-number">10</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    <span class="hljs-attr">dbl</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>        <span class="hljs-keyword">this</span>.val *= <span class="hljs-number">2</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    }
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>};
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>json.dbl();
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span><span class="hljs-keyword">let</span> dbl = json.dbl;
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span>dbl();
+</div><div class="hljs-line"><span class="hljs-comment line-number">11.</span>json.dbl.call(<span class="hljs-built_in">window</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">12.</span>alert(<span class="hljs-built_in">window</span>.val + json.val);
+</div></code></pre>
+
+<p>4.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-keyword">let</span> val = <span class="hljs-number">1</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-keyword">let</span> json = {
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>        <span class="hljs-attr">val</span>: <span class="hljs-number">10</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>        <span class="hljs-attr">dbl</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>            val *= <span class="hljs-number">2</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>        }
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>    };
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span>    json.dbl();
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span>    alert(json.val + val);
+</div><div class="hljs-line"><span class="hljs-comment line-number">11.</span>})();
+</div></code></pre>
+
+<p>5.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">let</span> test = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">i</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>        alert(i *= <span class="hljs-number">2</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    }
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>})(<span class="hljs-number">2</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>test(<span class="hljs-number">5</span>); 
+</div></code></pre>
+
+<p>6.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">C1</span>(<span class="hljs-params">name</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-keyword">this</span>.name = name || <span class="hljs-string">'join'</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>}
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">C2</span>(<span class="hljs-params">name</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    name ? <span class="hljs-keyword">this</span>.name = name : <span class="hljs-literal">null</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>}
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">C3</span>(<span class="hljs-params">name</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>    <span class="hljs-keyword">this</span>.name = name &amp;&amp; <span class="hljs-string">'join'</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span>}
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span>C1.prototype.name = <span class="hljs-string">'tom'</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">11.</span>C2.prototype.name = <span class="hljs-string">'tom'</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">12.</span>C3.prototype.name = <span class="hljs-string">'tom'</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">13.</span>alert(<span class="hljs-keyword">new</span> C1().name + <span class="hljs-keyword">new</span> C2().name + <span class="hljs-keyword">new</span> C3().name);
+</div></code></pre>
+
+<p>7.</p>
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">var</span> n = <span class="hljs-number">0</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    fn = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>        <span class="hljs-keyword">this</span>.n *= <span class="hljs-number">2</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>        n++;
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">m</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>            n += ++m;
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>            <span class="hljs-built_in">console</span>.log(n);
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>        }
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span>    };
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span><span class="hljs-keyword">var</span> f = fn(<span class="hljs-number">2</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">11.</span>f(<span class="hljs-number">3</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">12.</span>fn(<span class="hljs-number">3</span>)(<span class="hljs-number">4</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">13.</span>f(<span class="hljs-number">4</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">14.</span><span class="hljs-built_in">console</span>.log(n);
+</div></code></pre>
+
+<p>8.</p>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">let</span> n = <span class="hljs-number">1</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span><span class="hljs-keyword">let</span> x = {
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-attr">n</span>: <span class="hljs-number">2</span>,
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    <span class="hljs-attr">y</span>: (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">n</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>        n = n || <span class="hljs-number">3</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>        <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">m</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>            m = m || <span class="hljs-number">4</span>;
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>            <span class="hljs-keyword">this</span>.n += m++;
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span>            n += ++m;
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span>            <span class="hljs-built_in">console</span>.log(n);
+</div><div class="hljs-line"><span class="hljs-comment line-number">11.</span>        }
+</div><div class="hljs-line"><span class="hljs-comment line-number">12.</span>    })(<span class="hljs-built_in">window</span>.n)
+</div><div class="hljs-line"><span class="hljs-comment line-number">13.</span>};
+</div><div class="hljs-line"><span class="hljs-comment line-number">14.</span><span class="hljs-keyword">let</span> z = x.y;
+</div><div class="hljs-line"><span class="hljs-comment line-number">15.</span>x.y(<span class="hljs-number">5</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">16.</span>z(<span class="hljs-number">6</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">17.</span><span class="hljs-built_in">console</span>.log(n, x.n);
+</div></code></pre>
+
+<ol start="9"><li rel="9"></li>
+</ol>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">let</span> Fn = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">x = <span class="hljs-number">0</span>, y = <span class="hljs-number">0</span></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-keyword">this</span>.x = x;
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    <span class="hljs-keyword">this</span>.y = y;
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>    <span class="hljs-keyword">this</span>.getX = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.x);
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>    }
+</div><div class="hljs-line"><span class="hljs-comment line-number">7.</span>};
+</div><div class="hljs-line"><span class="hljs-comment line-number">8.</span>Fn.prototype.getY = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">9.</span>    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.y);
+</div><div class="hljs-line"><span class="hljs-comment line-number">10.</span>};
+</div><div class="hljs-line"><span class="hljs-comment line-number">11.</span>Fn.prototype = {
+</div><div class="hljs-line"><span class="hljs-comment line-number">12.</span>    <span class="hljs-attr">setX</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val</span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">13.</span>        <span class="hljs-keyword">this</span>.x = val;
+</div><div class="hljs-line"><span class="hljs-comment line-number">14.</span>    },
+</div><div class="hljs-line"><span class="hljs-comment line-number">15.</span>    <span class="hljs-attr">getX</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">16.</span>        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.x);
+</div><div class="hljs-line"><span class="hljs-comment line-number">17.</span>    }
+</div><div class="hljs-line"><span class="hljs-comment line-number">18.</span>};
+</div><div class="hljs-line"><span class="hljs-comment line-number">19.</span><span class="hljs-keyword">let</span> f1 = <span class="hljs-keyword">new</span> Fn;
+</div><div class="hljs-line"><span class="hljs-comment line-number">20.</span><span class="hljs-keyword">let</span> f2 = <span class="hljs-keyword">new</span> Fn(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">21.</span><span class="hljs-built_in">console</span>.log(f1.constructor);
+</div><div class="hljs-line"><span class="hljs-comment line-number">22.</span>f1.setX(<span class="hljs-number">3</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">23.</span>f1.getX();
+</div><div class="hljs-line"><span class="hljs-comment line-number">24.</span>f1.__proto__.getX();
+</div><div class="hljs-line"><span class="hljs-comment line-number">25.</span>f1.__proto__.setX(<span class="hljs-number">4</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">26.</span>f2.getX();
+</div><div class="hljs-line"><span class="hljs-comment line-number">27.</span>f2.__proto__.getX();
+</div><div class="hljs-line"><span class="hljs-comment line-number">28.</span>f2.getY();
+</div></code></pre>
+
+<ol start="10"><li rel="10">说出下面代码是否可以依次输出 1~5 的值，不可以请说明原因，以及你的解决方案（至少一种）</li>
+</ol>
+
+
+
+<pre class="prettyprint with-line-number hljs-dark"><code class="language-javascript hljs"><div class="hljs-line"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt;= <span class="hljs-number">5</span>; i++) {
+</div><div class="hljs-line"><span class="hljs-comment line-number">2.</span>    <span class="hljs-comment">//=&gt;提示:定时器也是异步编程</span>
+</div><div class="hljs-line"><span class="hljs-comment line-number">3.</span>    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+</div><div class="hljs-line"><span class="hljs-comment line-number">4.</span>        <span class="hljs-built_in">console</span>.log(i);
+</div><div class="hljs-line"><span class="hljs-comment line-number">5.</span>    }, <span class="hljs-number">1000</span>);
+</div><div class="hljs-line"><span class="hljs-comment line-number">6.</span>}
+</div></code></pre></div></body></html>
