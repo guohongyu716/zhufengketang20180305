@@ -96,7 +96,11 @@ setTimeout(function(){
     console.log(1);
 },1000;)
 
+<<<<<<< HEAD
 setTimeout(function bind(){
+=======
+setTimeout(function(){
+>>>>>>> 0c500c49e8d5b45cdf48bc32408b3eb3d907b534
     console.log(1);
 },1000;)
 
@@ -142,8 +146,11 @@ fn(10,20);
 
 3.箭头函数执行和是否有点,点前面是谁都没有关系了,应为他没有自己的执行主体,在箭头函数中使用到的THIS都是直接找上下文中的THIS来使用
 
+<<<<<<< HEAD
 注意: 箭头函数虽然很强大,但是不可以乱用,尤其是要改变函数中的this
 
+=======
+>>>>>>> 0c500c49e8d5b45cdf48bc32408b3eb3d907b534
 
 
 ### LESS

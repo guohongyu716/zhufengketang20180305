@@ -4,11 +4,16 @@
 //B: 把获取的数据进行解析
 //C:把数据绑定在HTML页面中(数据绑定):ES6的模板字符串
 
+<<<<<<< HEAD
 let listBox = document.getElementById('list'),
     headerBox = document.getElementById('header'),
     linkList = headerBox.getElementsByTagName('a'),
     productList = listBox.getElementsByTagName('li');
 let roductData = null;
+=======
+
+let productData = null;
+>>>>>>> 0c500c49e8d5b45cdf48bc32408b3eb3d907b534
 let xhr = new XMLHttpRequest();//创建AJAX实例
 xhr.open('GET','json/product.json',false); //打开一个请求的地址（一般地址都是服务器提供好的，会给我们一个API文档接口），最后一个参数都是设置同步还是异步（false：同步，true：异步），真实项目中 最常使用异步，我们今天为了简单使用同步
 xhr.onreadystatechange = () => {
@@ -17,8 +22,11 @@ xhr.onreadystatechange = () => {
     }
 };
 xhr.send(null);
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0c500c49e8d5b45cdf48bc32408b3eb3d907b534
 // 获取的结果是一个字符串：'json格式的字符串'
 // JSON格式：JSON不是一种数据类型，而是一种数据格式，只要把对象的属性名用双引号括起来，此时的对象就不再称之为普通对象，而是叫做 JSON格式的对象
 // 从服务器端获取的数据格式一般都是JSON格式的(大部分都是JSON格式字符串)
@@ -63,6 +71,7 @@ for (let i = 0; i < productData.length; i++) {
         </a></li>`;
 }
 list.innerHTML = str;
+<<<<<<< HEAD
 
 
 let sortList = () => {
@@ -124,3 +133,5 @@ sortList();
 
 
 
+=======
+>>>>>>> 0c500c49e8d5b45cdf48bc32408b3eb3d907b534
