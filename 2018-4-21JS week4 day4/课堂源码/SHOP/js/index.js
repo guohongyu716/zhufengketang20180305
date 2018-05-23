@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let listBox = document.getElementById('list'),
     headerBox = document.getElementById('header'),
     linkList = headerBox.getElementsByTagName('a'),
@@ -80,7 +79,7 @@ let listBox = document.getElementById('list'),
         };
     }
 }();
-=======
+//=======
 /*
  * 1.获取数据和实现数据绑定
  *  =>真实项目中，页面中大部分数据都不是写死的，而是动态绑定的
@@ -142,23 +141,3 @@ for (let i = 0; i < productData.length; i++) {
         </a></li>`;
 }
 list.innerHTML = str;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 0c500c49e8d5b45cdf48bc32408b3eb3d907b534

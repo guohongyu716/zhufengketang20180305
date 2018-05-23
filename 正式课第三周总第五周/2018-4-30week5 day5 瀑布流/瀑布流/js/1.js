@@ -1,50 +1,54 @@
-//瀑布流原理
-//效果: 多列不规则排列,每一列很多内容,每一项高度不固定,最后按照规则排列,三列之间不能相差太多高度
-// 实现:首先获取需要的数据(假设有50条供3列)把50条数据中的前三条依次插入三列中(目前有的裂高,有的列低),接下来在拿出三条数据,但是本次插入不是依次插入,而是需要先把当前三列进行高矮排列,
+$(function () {
+    let page = 0,
+        imgData = null,
+        isRun = false;
+    let queryData = () => {
+        page++;
+        $.ajax({
+            url: `json/data.json?page=${page}`,
+            method: 'get',
+            async: false,
+            dataType: 'json',
+            success: result => {
+                imgData = result;
+            }
+        });
+    };
+    queryData();m
+    let bindHTML = () => {
+        let $boxList = $('.flowBox > li');
+        for (let i = 0; i < imgData.length; i += 3) {
+            $boxList.sort((a, b) => {
+                return $(a).outerHeight() - $(b).outerHeight();
+            }).each((index, curLi) => {
+                let item = imgData[i + index];
+                if (!item) return;
+                let {id, pic, link, title} = item;
+                $(`<a href="${link}">
+                    <div><img src="${pic}" alt=""></div>
+                    <span>${title}</span>
+                </a>`).appendTo($(curLi));
+            });
+        }
 
-//第一种方法
-$(function() {
-  let page = 0,
-    imgData = null;
-  let queryData = () => {
-    page++;
-    $.ajax({
-      url: `json/data.json?page=${page}`,
-      method: "get",
-      async: false,
-      dataType: "json",
-      success: result => {
-        imgData = result;
-      }
+        isRun = false;
+    };
+    bindHTML();
+    $(window).on('scroll', () => {
+        let winH = $(window).outerHeight(),
+            pageH = document.documentElement.scrollHeight || document.body.scrollHeight,
+            scrollT = $(window).scrollTop();
+        if ((scrollT + 100) >= (pageH - winH)) {
+            if (isRun) return;
+            isRun = true;
+
+            if (page > 5) {
+                alert('没有更多数据了');
+                return;
+            }
+
+            queryData();
+            bindHTML();
+        }
     });
-  };
-  queryData();
-  console.log(imgData);
-
-  // 数据绑定
-  // 插入对象
-  let queryHTML = ({ id, pic, link, title } = {}) => {
-    if (typeof id === "undefined") {
-      return "";
-    }
-    return `<a href="${link}">
-        <div><img src="${pic}" alt=""></div>
-        <span>${title}</span>
-    </a>`;
-  };
-
-  let $boxList = $(".flowBox > li"),
-    boxList = [].slice.call($boxList);
-  for (let i = 0; i < imgData.length; i += 3) {
-    let item1 = imgData[i],
-      item2 = imgData[i + 1],
-      item3 = imgData[i + 2];
-    boxList
-      .sort((a, b) => {
-        return a.offsetHeight - b.offsetHeight;
-      })
-      .forEach((curLi, index) => {
-        curLi.innerHTML += queryHTML(eval("item" + (index + 1)));
-      });
-  }
 });

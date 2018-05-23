@@ -1,0 +1,42 @@
+.tabBox{
+    margin:20px auto;
+    width: 360px;
+}
+.tabBox .option{
+    height: 34px;
+    border: 1px solid #dbdee1;
+    background: #EEE;
+}
+.tabBox .option li{
+    float: left;
+    padding: 0 12px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+}
+.tabBox .option li a{
+    display: block;
+    color: #000;
+    font-size: 14px;
+}
+
+.tabBox .option li.active{
+    /*插件中要求想让谁选中，给谁加active样式类即可*/
+    border-top: 3px solid #ff8400;
+    height: 33px;
+    line-height: 32px;
+    margin-top: -1px;
+    background: #fff;
+}
+
+.tabBox .con {
+    display: none;
+    padding-top: 10px;
+    height: 220px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tabBox .con.active{
+    display: block;
+}

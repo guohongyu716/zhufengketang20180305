@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet/less" href="./css/1.less">
+    <script src="./js/less-2.5.3.min.js"></script>
+
+    <script src="js/prefixfree.min.js"></script>
+
+    <script>
+        ~function anonymous(window) {
+            let computedREM = function computedREM() {
+                let winW = document.documentElement.clientWidth,
+                    desW = 640;
+
+                if (winW >= 640) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+            };
+            computedREM();
+            window.addEventListener('resize', computedREM);
+        }(window);
+
+
+    </script>
+</head>
+
+<body>
+    <main class="mainBox">
+        <section class="loadingBox">
+            <div class="title">
+                <h1>珠峰培训</h1>
+                <h2>H5场景交互简历</h2>
+
+
+            </div>
+
+            <div class="progress">
+                <div class="current">
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- 第二页 -->
+        <section class="phoneBox">
+            <h2>
+                <img src="img/zf_phoneLogo.png" alt="">
+                <span>00:00</span>
+            </h2>
+            <div class="answer">
+                <div class="markMove"></div>
+                <a href="javascript:;" class="markLink"></a>
+            </div>
+            <div class="hang">
+                <a href="javascript:;" class="markLink"></a>
+            </div>
+            <!--AUDIO-->
+            <audio src="audio/bell.mp3" loop preload="none" id="answerBell"></audio>
+            <audio src="audio/say.mp3" preload="none" id="introduction"></audio>
+
+        </section>
+
+
+
+        <!-- 第三页 -->
+        <section class="messageBox">
+            <ul class="talkBox clearfix">
+                <li class="student">
+                    <img src="img/zf_messageStudent.png" alt="">
+                    <i></i>
+                    明天放假吗？
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    什么是假
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    需要大家把HTML5+CSS3+JS掌握扎实些，这样才能找到好工作啊...
+                </li>
+                <li class="student">
+                    <img src="img/zf_messageStudent.png" alt="">
+                    <i></i>
+                    都学了啊，可还是找不到工作!
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+                <li class="teacher">
+                    <img src="img/zf_messageLogo.png" alt="">
+                    <i></i>
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </li>
+            </ul>
+            <div class="keyBord">
+                <span>都学了啊，可还是找不到工作!</span>
+                <a href="javascript:;" class="submit"></a>
+            </div>
+            <audio src="audio/music.mp3" loop preload="none" id="musicAudio"></audio>
+        </section>
+
+
+        <section class="cubeBox">
+            <ul class="cube">
+                <li><img src="img/zf_cube1.png" alt=""></li>
+                <li><img src="img/zf_cube2.png" alt=""></li>
+                <li><img src="img/zf_cube3.png" alt=""></li>
+                <li><img src="img/zf_cube4.png" alt=""></li>
+                <li><img src="img/zf_cube5.png" alt=""></li>
+                <li><img src="img/zf_cube6.png" alt=""></li>
+            </ul>
+            <img src="img/zf_cubeTip.png" alt="" class="tip">
+        </section>
+
+        <section class="detailBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
+        </section>
+    </main>>
+    <script src="js/zepto.min.js"></script>
+    <script src="./js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="./js/1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <style>
+         html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #box, #box2, #box3 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 150px;
+            height: 150px;
+            background: lightcoral;
+            cursor: move;
+            z-index: 0;
+        }
+
+        #box2 {
+            top: 200px;
+            left: 400px;
+            background: lightgreen;
+        }
+
+        #box3 {
+            top: 50px;
+            left: 50px;
+            background: orange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+    <!-- <div id="box2"></div>
+    <div id="box3"></div> -->
+
+    <script src="./2.js"></script>
+</body>
+</html>

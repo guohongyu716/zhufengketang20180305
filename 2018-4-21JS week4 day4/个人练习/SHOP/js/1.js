@@ -60,9 +60,3 @@ let listBox = document.getElementById('list'),
         sortList.call(this);
     };
 }();
-
-for (let i =0 ;i<linkList.length;i++){
-
-
-
-}

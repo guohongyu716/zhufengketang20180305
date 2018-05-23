@@ -12,7 +12,6 @@ html, body {
     overflow: hidden;
 }
 
-/*--HEADER--*/
 .header {
     background: #FFF;
 }
@@ -67,7 +66,6 @@ html, body {
     color: #E01D20;
 }
 
-/*--LIST--*/
 .list {
     width: 1205px;
     margin-top: 20px;

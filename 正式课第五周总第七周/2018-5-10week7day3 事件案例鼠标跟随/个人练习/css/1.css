@@ -1,0 +1,39 @@
+.container {
+            position: relative;
+            margin: 20px auto;
+            width: 462px;
+            height: 77px;
+            }
+.container .imgBox li {
+            float: left;
+            margin-right: 18px;
+            width: 100px;
+            height: 75px;
+            border: 1px solid #000;
+        }
+
+.container .imgBox li:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+.container .imgBox li img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+.container .mark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+
+.container .mark img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
